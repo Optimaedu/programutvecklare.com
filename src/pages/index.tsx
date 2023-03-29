@@ -14,7 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='w-full min-h-screen m-0 p-0 bg-slate-400'>
-        <h1 className='text-xl font-semibold'>Programutvecklare</h1>
+        <h1 className='text-xxl font-semibold'>Välkommen</h1>
+        <h1 className='text-xl text-yellow-50 font-semibold'>Programutvecklare</h1>
       </div>
     </>
   )
