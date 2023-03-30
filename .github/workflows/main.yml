@@ -25,6 +25,7 @@ jobs:
           SCRIPT_AFTER: |
             ${{ secrets.CMD_SOURCE_VIRTUAL_ENVIRONMENT }}
             npm install
+            npm run ruild
             touch .htaccess
             mkdir -p tmp
             touch tmp/restart.txt
