@@ -2,7 +2,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/programutvecklare.com/programutvecklare.com
+    - export DEPLOYPATH=/home/programutvecklar/programutvecklare.com
     - npm install --prefix $DEPLOYPATH
     - npm run build --prefix $DEPLOYPATH
     - /usr/local/cpanel/3rdparty/bin/git --work-tree=$DEPLOYPATH --git-dir=$DEPLOYPATH/.git pull origin master
