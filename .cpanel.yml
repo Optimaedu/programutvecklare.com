@@ -5,4 +5,4 @@ deployment:
     - export DEPLOYPATH=/home/programutvecklare.com/programutvecklare.com
     - npm install --prefix $DEPLOYPATH
     - npm run build --prefix $DEPLOYPATH
-    - /usr/local/cpanel/3rdparty/bin/git --work-tree=$DEPLOYPATH --git-dir=$DEPLOYPATH/.git pull origin main
+    - /usr/local/cpanel/3rdparty/bin/git --work-tree=$DEPLOYPATH --git-dir=$DEPLOYPATH/.git pull origin master
