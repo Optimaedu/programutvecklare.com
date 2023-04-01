@@ -24,6 +24,7 @@ jobs:
           TARGET: ${{ secrets.REMOTE_TARGET }}
           SCRIPT_AFTER: |
             ${{ secrets.CMD_SOURCE_VIRTUAL_ENVIRONMENT }}
+            npm build
             touch .htaccess
             mkdir -p tmp
             touch tmp/restart.txt
