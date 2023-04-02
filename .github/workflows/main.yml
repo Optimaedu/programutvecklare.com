@@ -2,7 +2,7 @@ name: CPanel - Node - CI
 
 on: 
   push:
-    branches: master
+    branches: main
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: master
+        ref: main
 
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@main
@@ -24,7 +24,6 @@ jobs:
           TARGET: ${{ secrets.REMOTE_TARGET }}
           SCRIPT_AFTER: |
             ${{ secrets.CMD_SOURCE_VIRTUAL_ENVIRONMENT }}
-            npm build
             touch .htaccess
             mkdir -p tmp
             touch tmp/restart.txt
