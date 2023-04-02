@@ -2,7 +2,7 @@ name: CPanel - Node - CI
 
 on: 
   push:
-    branches: main
+    branches: master
 
 jobs:
   build:
