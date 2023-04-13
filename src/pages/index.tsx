@@ -16,10 +16,10 @@ export default function Home() {
       />
       <nav id="main" className="flex items-center p-5 pt-12">
         <div className="fixed top-0 w-full py-4">
-          <div className="flex justify-between items-center">
-            <a href="#main" className="flex flex-col">
-              <Image src={"/logo.png"} width={500}
-        height={500} alt="logo" className="w-24" />
+          <div className="flex justify-between">
+            <a href="#main" className="flex flex-col mr-5">
+              <Image src={"/logo.png"} width={250}
+        height={250} alt="logo" className="w-24" />
               <p>programutvecklare</p>
             </a>
             <div className="flex flex-wrap justify-end pr-10">
@@ -58,7 +58,7 @@ export default function Home() {
 
       <section
         id="info"
-        className="flex flex-col px-36 text-center 2xl:text-left"
+        className="flex flex-col text-center mx-7 2xl:mx-36 2xl:text-left"
       >
         <h1 className="text-4xl 2xl:text-6xl mt-10 2xl:mt-40">
           Vad är det vi gör här?
@@ -68,7 +68,7 @@ export default function Home() {
         </h2>
         <p className="mt-5">Lorem Ipsum is simply dummy text of the printing</p>
       </section>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-4 2xl:mx-20 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-4 2xl:mx-36 mt-10">
         <div>
           <Image
             src={"/imagea.png"}
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row items-center 2xl:flex-col 2xl:justify-between 2xl:px-10 lg:px-20">
+        <div className="flex flex-row 2xl:flex-col 2xl:justify-between 2xl:px-10 lg:px-20">
           <Image
             src={"/startup.svg"}
             width={500}
@@ -159,9 +159,9 @@ export default function Home() {
             alt="startup"
             className="w-1/2 2xl:w-auto 2xl:h-96"
           />
-          <div className="2xl:ml-10 lg:ml-20 mt-5 2xl:mt-0">
-            <p className="text-4xl text-[#ACE0E7]">Du lär dig:</p>
-            <ul className="list-disc text-xl 2xl:text-2xl mt-2">
+          <div className="2xl:ml-10 lg:ml-20 mt-5">
+            <p className="text-2xl xl:text-4xl text-[#ACE0E7]">Du lär dig:</p>
+            <ul className="list-disc text-sm xl:text-2xl mt-2">
               <li>HTML, CSS och JavaScript</li>
               <li>Lorem Ipsum</li>
               <li>Lorem Ipsum</li>
@@ -171,25 +171,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="videos" className="flex flex-col items-center 2xl:mb-56">
-        <h1 className="text-4xl 2xl:text-5xl text-center 2xl:mt-40">
+      <section id="videos" className="flex flex-col items-center mx-6 2xl:mx-0 2xl:mb-56">
+        <h1 className="text-2xl xl:text-5xl text-center 2xl:mt-40">
           Vad är det som händer vid programutvecklare?
         </h1>
         <div className="flex flex-col 2xl:flex-row mt-10">
           <div className="mx-auto 2xl:mx-10 flex items-center flex-col">
-            <iframe
-              className="rounded-3xl w-full h-48 2xl:w-[560px] 2xl:h-[315px] lg:w-[720px] lg:h-[405px]"
-              src="https://www.youtube.com/embed/4CgciCxtwz4?controls=0"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
-            <h2 className="text-gray-400 text-xl mt-3 max-w-[550px]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s
-            </h2>
-          </div>
-          <div className="mx-auto 2xl:mx-10 flex items-center flex-col lg:mx-20 mt-10 2xl:mt-0">
             <iframe
               className="rounded-3xl w-full h-48 2xl:w-[560px] 2xl:h-[315px] lg:w-[720px] lg:h-[405px]"
               src="https://www.youtube.com/embed/4CgciCxtwz4?controls=0"
@@ -241,12 +228,12 @@ export default function Home() {
 
       <footer className="bg-gray-900 mt-10 2xl:mt-24 w-full">
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
-          <p>© 2023 Optima</p>
+          <p className="text-[13px] 2xl:text-lg">© 2023 Optima</p>
           <a href="https://optimaedu.fi/sv/">
-            <Image src={"/logo.png"} width={500}
-        height={500} alt="logo" className="w-24" />
+            <Image src={"/logo.png"} width={1280}
+        height={720} alt="logo" className="w-24" />
           </a>
-          <div className="flex">
+          <div className="flex w-28 2xl:w-32">
             <a
               href="https://www.facebook.com/optimaedu.fi/"
               target="_blank"
