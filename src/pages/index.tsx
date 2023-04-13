@@ -27,25 +27,25 @@ export default function Home() {
               />
               <p>programutvecklare</p>
             </a>
-            <div className="flex flex-wrap justify-end pr-10">
-              <a href="#info" className="pr-3 py-2">
+            <div className="flex flex-wrap justify-end pr-8">
+              <a href="#info" className="pl-5 py-2">
                 Info
               </a>
-              <a href="#application" className="px-3 py-2">
+              <a href="#application" className="pl-5 py-2">
                 Ansökan
               </a>
-              <a href="#videos" className="px-3 py-2">
+              <a href="#videos" className="pl-5 py-2">
                 Videor
               </a>
-              <a href="#contact" className="pl-3 py-2">
-                Kontakta oss
+              <a href="#contact" className="pl-5 py-2">
+                Kontakt
               </a>
             </div>
           </div>
         </div>
       </nav>
 
-      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-around m-10 mb-32 mt-4 xl:mt-24 2xl:mt-56">
+      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-around m-10 mb-32 mt-14 xl:mt-24 2xl:mt-56">
         <div className="text-center 2xl:text-left mt-6 2xl:mt-0">
           <h1 className="text-3xl xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
             programmering
