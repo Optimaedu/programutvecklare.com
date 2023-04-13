@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+  background-color: #0c1024;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4155b6;
+}
