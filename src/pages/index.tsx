@@ -10,16 +10,21 @@ export default function Home() {
       <Image
         src={"/background.png"}
         alt="background"
-        width={500}
-        height={500}
+        width={1920}
+        height={1080}
         className="absolute w-full z-[-10]"
       />
       <nav id="main" className="flex items-center p-5 pt-12">
         <div className="fixed top-0 w-full py-4">
           <div className="flex justify-between">
             <a href="#main" className="flex flex-col mr-5">
-              <Image src={"/logo.png"} width={250}
-        height={250} alt="logo" className="w-24" />
+              <Image
+                src={"/logo.png"}
+                width={1080}
+                height={720}
+                alt="logo"
+                className="w-24"
+              />
               <p>programutvecklare</p>
             </a>
             <div className="flex flex-wrap justify-end pr-10">
@@ -49,8 +54,8 @@ export default function Home() {
         </div>
         <Image
           src={"/main.png"}
-          width={655}
-        height={500}
+          width={1920}
+          height={1080}
           alt="Image"
           className="rounded-3xl w-full max-w-[655px] mt-6 2xl:mt-0"
         />
@@ -68,12 +73,12 @@ export default function Home() {
         </h2>
         <p className="mt-5">Lorem Ipsum is simply dummy text of the printing</p>
       </section>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-4 2xl:mx-36 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-4 2xl:mx-36 mt-10">
         <div>
           <Image
             src={"/imagea.png"}
-            width={400}
-        height={200}
+            width={1920}
+            height={1080}
             alt=""
             className="w-full h-[200px] 2xl:h-[400px] object-cover rounded-3xl"
           />
@@ -81,17 +86,8 @@ export default function Home() {
         <div>
           <Image
             src={"/imageb.png"}
-            width={400}
-        height={200}
-            alt=""
-            className="w-full h-[200px] 2xl:h-[400px] object-cover rounded-3xl"
-          />
-        </div>
-        <div>
-          <Image
-            src={"/imagea.png"}
-            width={400}
-        height={200}
+            width={1920}
+            height={1080}
             alt=""
             className="w-full h-[200px] 2xl:h-[400px] object-cover rounded-3xl"
           />
@@ -154,8 +150,8 @@ export default function Home() {
         <div className="flex flex-row 2xl:flex-col 2xl:justify-between 2xl:px-10 lg:px-20">
           <Image
             src={"/startup.svg"}
-            width={500}
-        height={500}
+            width={1280}
+            height={720}
             alt="startup"
             className="w-1/2 2xl:w-auto 2xl:h-96"
           />
@@ -171,7 +167,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="videos" className="flex flex-col items-center mx-6 2xl:mx-0 2xl:mb-56">
+      <section
+        id="videos"
+        className="flex flex-col items-center mx-6 2xl:mx-0 2xl:mb-56"
+      >
         <h1 className="text-2xl xl:text-5xl text-center 2xl:mt-40">
           Vad är det som händer vid programutvecklare?
         </h1>
@@ -230,8 +229,13 @@ export default function Home() {
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
           <p className="text-[13px] 2xl:text-lg">© 2023 Optima</p>
           <a href="https://optimaedu.fi/sv/">
-            <Image src={"/logo.png"} width={1280}
-        height={720} alt="logo" className="w-24" />
+            <Image
+              src={"/logo.png"}
+              width={1280}
+              height={720}
+              alt="logo"
+              className="w-24"
+            />
           </a>
           <div className="flex w-28 2xl:w-32">
             <a
@@ -239,32 +243,48 @@ export default function Home() {
               target="_blank"
               className="mr-1"
             >
-              <Image src={"/facebook-logo-bold.svg"} width={32}
-        height={32} alt="Facebook" />
+              <Image
+                src={"/facebook-logo-bold.svg"}
+                width={32}
+                height={32}
+                alt="Facebook"
+              />
             </a>
             <a
               href="https://www.instagram.com/optimaedu/"
               target="_blank"
               className="mr-1"
             >
-              <Image src={"/instagram-logo-bold.svg"} width={32}
-        height={32} alt="Instagram" />
+              <Image
+                src={"/instagram-logo-bold.svg"}
+                width={32}
+                height={32}
+                alt="Instagram"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/optima-yrkesutbildning/"
               target="_blank"
               className="mr-1"
             >
-              <Image src={"/linkedin-logo-bold.svg"} width={32}
-        height={32} alt="linkedIn" />
+              <Image
+                src={"/linkedin-logo-bold.svg"}
+                width={32}
+                height={32}
+                alt="linkedIn"
+              />
             </a>
             <a
               href="https://www.youtube.com/channel/UCqDRl3XxAuA-96pTAkf_lJw"
               target="_blank"
               className="mr-1"
             >
-              <Image src={"/youtube-logo-bold.svg"} width={32}
-        height={32} alt="YouTube" />
+              <Image
+                src={"/youtube-logo-bold.svg"}
+                width={32}
+                height={32}
+                alt="YouTube"
+              />
             </a>
           </div>
         </div>
