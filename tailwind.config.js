@@ -1,11 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-     "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: "Montserrat",
+      },
+      backgroundImage: {
+        custom: ["-webkit-linear-gradient(#edbf91, #db7d12)"],
+      },
+    },
   },
-  plugins: [],
-}
-
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".bg-clip-text": {
+          "-webkit-background-clip": "text",
+          "-moz-background-clip": "text",
+        },
+        ".text-transparent": {
+          "-webkit-text-fill-color": "transparent",
+          "-moz-text-fill-color": "transparent",
+        },
+      });
+    },
+  ],
+};
