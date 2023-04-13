@@ -3,10 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 7px;
-  background-color: #0c1024;
+  @apply h-[7px] w-[5px];
+}
+::-webkit-scrollbar-track {
+  @apply bg-[#0c1024];
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #4155b6;
+  @apply bg-[#1d2b69];
 }

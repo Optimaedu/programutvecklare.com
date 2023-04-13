@@ -17,7 +17,7 @@ export default function Home() {
       <nav id="main" className="flex items-center p-5 pt-12">
         <div className="fixed top-0 w-full py-4">
           <div className="flex justify-between">
-            <a href="#main" className="flex flex-col mr-5">
+            <a href="#main" className="flex flex-col mr-5 ml-1">
               <Image
                 src={"/logo.png"}
                 width={1080}
@@ -27,7 +27,7 @@ export default function Home() {
               />
               <p>programutvecklare</p>
             </a>
-            <div className="flex flex-wrap justify-end pr-8">
+            <div className="flex flex-wrap justify-end pr-10">
               <a href="#info" className="pl-5 py-2">
                 Info
               </a>
