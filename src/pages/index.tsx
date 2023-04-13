@@ -42,7 +42,7 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-around m-10 mb-32 mt-4 xl:mt-24 2xl:mt-56">
         <div className="text-center 2xl:text-left mt-6 2xl:mt-0">
-          <h1 className="text-3xl xl:text-8xl text-orange-400 pb-2">
+          <h1 className="text-3xl xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
             programmering
           </h1>
           <h2 className="text-3xl xl:text-8xl">för allihopa</h2>
