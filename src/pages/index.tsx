@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Image
         src={"/background.png"}
-        alt="background"
+        alt="Background"
         width={1920}
         height={1080}
         className="absolute w-full z-[-10]"
@@ -22,7 +22,7 @@ export default function Home() {
                 src={"/logo.png"}
                 width={1080}
                 height={720}
-                alt="logo"
+                alt="Logo"
                 className="w-24"
               />
               <p>programutvecklare</p>
@@ -56,7 +56,7 @@ export default function Home() {
           src={"/main.png"}
           width={1920}
           height={1080}
-          alt="Image"
+          alt="Main Image"
           className="rounded-3xl w-full max-w-[655px] mt-6 2xl:mt-0"
         />
       </main>
@@ -73,23 +73,19 @@ export default function Home() {
         </h2>
         <p className="mt-5">Lorem Ipsum is simply dummy text of the printing</p>
       </section>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-4 2xl:mx-36 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-4 lg:mx-36 mt-10">
         <div>
-          <Image
+          <img
             src={"/imagea.png"}
-            width={1920}
-            height={1080}
-            alt=""
-            className="w-full h-[200px] 2xl:h-[400px] object-cover rounded-3xl"
+            alt="Image 1"
+            className="w-full h-[200px] lg:h-[300px] 2xl:h-[400px] object-cover rounded-3xl"
           />
         </div>
         <div>
-          <Image
+          <img
             src={"/imageb.png"}
-            width={1920}
-            height={1080}
-            alt=""
-            className="w-full h-[200px] 2xl:h-[400px] object-cover rounded-3xl"
+            alt="Image 2"
+            className="w-full h-[200px] lg:h-[300px] 2xl:h-[400px] object-cover rounded-3xl"
           />
         </div>
       </div>
@@ -152,7 +148,7 @@ export default function Home() {
             src={"/startup.svg"}
             width={1280}
             height={720}
-            alt="startup"
+            alt="Startup"
             className="w-1/2 2xl:w-auto 2xl:h-96"
           />
           <div className="2xl:ml-10 lg:ml-20 mt-5">
@@ -171,18 +167,18 @@ export default function Home() {
         id="videos"
         className="flex flex-col items-center mx-6 2xl:mx-0 2xl:mb-56"
       >
-        <h1 className="text-2xl xl:text-5xl text-center 2xl:mt-40">
-          Vad är det som händer vid programutvecklare?
+        <h1 className="text-2xl 2xl:text-5xl text-center 2xl:mt-40">
+          Vad gör vi vid programutvecklare?
         </h1>
-        <div className="flex flex-col 2xl:flex-row mt-10">
+        <div className="flex flex-col 2xl:flex-row mt-7">
           <div className="mx-auto 2xl:mx-10 flex items-center flex-col">
             <iframe
-              className="rounded-3xl w-full h-48 2xl:w-[560px] 2xl:h-[315px] lg:w-[720px] lg:h-[405px]"
+              className="rounded-3xl w-full h-48 2xl:w-[800px] 2xl:h-[450px] lg:w-[720px] lg:h-[405px]"
               src="https://www.youtube.com/embed/4CgciCxtwz4?controls=0"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
-            <h2 className="text-gray-400 text-xl mt-3 max-w-[550px]">
+            <h2 className="text-gray-400 text-xl mt-7 max-w-[550px]">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s
@@ -233,7 +229,7 @@ export default function Home() {
               src={"/logo.png"}
               width={1280}
               height={720}
-              alt="logo"
+              alt="Logo"
               className="w-24"
             />
           </a>
