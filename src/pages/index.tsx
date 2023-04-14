@@ -18,30 +18,31 @@ export default function Home() {
               <p>programutvecklare</p>
             </a>
             <div className="flex flex-wrap justify-end pr-10">
-              <a href="#info" className="pl-5 pt-2">
-                Info
+              <a href="#info">
+                <p className="hover:text-[#9f9f9f] pl-5 pt-2">Info</p>
               </a>
-              <a href="#application" className="pl-5 pt-2">
-                Ansökan
+              <a href="#application">
+                <p className="hover:text-[#9f9f9f] pl-5 pt-2">Kurser</p>
               </a>
-              <a href="#videos" className="pl-5 pt-2">
-                Videor
+              <a href="#videos">
+                <p className="hover:text-[#9f9f9f] pl-5 pt-2">Video</p>
               </a>
-              <a href="#contact" className="pl-5 pt-2">
-                Kontakt
+              <a href="#contact">
+                <p className="hover:text-[#9f9f9f] pl-5 pt-2">Kontakt</p>
               </a>
             </div>
           </div>
         </div>
       </nav>
 
-      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-around m-10 mb-32 mt-20 xl:mt-24 2xl:mt-56">
+      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-around mx-24 mb-32 mt-20 xl:mt-24 2xl:mt-56">
         <div className="text-center 2xl:text-left mt-6 2xl:mt-0">
           <h1 className="text-4xl xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
             programmering
           </h1>
           <h2 className="text-4xl xl:text-8xl">för allihopa</h2>
         </div>
+        <button></button>
         <Image
           src={"/main.webp"}
           width={1920}
@@ -88,47 +89,42 @@ export default function Home() {
         className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36 xl:mt-44 mb-20"
       >
         <div className="xl:w-[60%] xl:pr-8">
-          <h1 className="text-4xl xl:text-6xl mt-24">Ansökan</h1>
+          <h1 className="text-4xl xl:text-6xl mt-24">Kurser</h1>
           <h2 className="text-gray-400 text-xl mt-3 max-w-[1000px]">
-            Vill du lära dig att programmera?
+            Här är allt vi lär oss vid programutvecklare.
           </h2>
-          <div className="mt-5">
-            <div className="w-full xl:w-auto h-[90px] rounded-3xl bg-[#48922E] flex justify-center items-center">
-              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row mx-10">
-                <p className="xl:mx-3">
-                  Grunder inom informations- och kommunikationsteknik
+          <div className="mt-5 space-y-5 lg:space-y-3">
+            <div className="w-full h-20 rounded-3xl bg-[#b55912] flex justify-center items-center">
+              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+                <p>Grundexamen i informations- och kommunikationsteknik</p>
+                <p className="font-bold">180 kp</p>
+              </div>
+            </div>
+            <div className="w-full h-20 rounded-3xl bg-[#48922E] flex justify-center items-center">
+              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+                <p>
+                  Grundläggande uppgifter inom informations- och
+                  kommunikationsteknik
                 </p>
                 <p className="font-bold">25 kp</p>
               </div>
             </div>
-            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#925E2E] flex justify-center items-center">
-              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
-                <p className="xl:mx-3">Programmering</p>
-                <p className="font-bold">20 kp</p>
+            <div className="w-full h-20 rounded-3xl bg-[#48922E] flex justify-center items-center">
+              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+                <p>Programmering</p>
+                <p className="font-bold">45 kp</p>
               </div>
             </div>
-            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#925E2E] flex justify-center items-center">
-              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
-                <p className="xl:mx-3">Utveckling av programvara</p>
-                <p className="font-bold">20 kp</p>
+            <div className="w-full h-20 rounded-3xl bg-[#48922E] flex justify-center items-center">
+              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+                <p>Arbete som programvaruutvecklare</p>
+                <p className="font-bold">45 kp</p>
               </div>
             </div>
-            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#92402E] flex justify-center items-center">
-              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
-                <p className="xl:mx-3">Lorem Ipsum</p>
-                <p className="font-bold">25 kp</p>
-              </div>
-            </div>
-            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#92402E]  flex justify-center items-center">
-              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
-                <p className="xl:mx-3">Lorem Ipsum</p>
-                <p className="font-bold">25 kp</p>
-              </div>
-            </div>
-            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#2E7492] flex justify-center items-center">
-              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
-                <p className="xl:mx-3">Lorem Ipsum</p>
-                <p className="font-bold">25 kp</p>
+            <div className="w-full h-20 rounded-3xl bg-[#2E7492] flex justify-center items-center">
+              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+                <p>Implementering av programvara med komponentbibliotek</p>
+                <p className="font-bold">30 kp</p>
               </div>
             </div>
           </div>
@@ -142,10 +138,11 @@ export default function Home() {
             className="w-1/2 xl:w-auto xl:h-96"
           />
           <div className="xl:ml-10 lg:ml-20 mt-5">
-            <p className="text-xl lg:text-4xl text-[#ACE0E7]">Du lär dig:</p>
+            <p className="text-xl lg:text-4xl text-[#ACE0E7]">Vi lär dig:</p>
             <ul className="list-disc text-sm lg:text-xl mt-2">
               <li>HTML, CSS och JavaScript</li>
-              <li>olika frameworks</li>
+              <li>Node.js</li>
+              <li>Next.js m.m</li>
               <li>och mera...</li>
             </ul>
           </div>
@@ -213,7 +210,9 @@ export default function Home() {
 
       <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
-          <p className="text-[13px] 2xl:text-lg">© 2023 Optima</p>
+          <p className="text-[13px] 2xl:text-lg text-[#ffffe6de]">
+            © 2023 Optima
+          </p>
           <a href="https://optimaedu.fi/sv/">
             <Image
               src={"/logo.webp"}
