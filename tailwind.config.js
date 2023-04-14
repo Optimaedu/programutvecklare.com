@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         custom: ["-webkit-linear-gradient(#edbf91, #db7d12)"],
+        bg: "url('/background.webp')",
       },
     },
   },
