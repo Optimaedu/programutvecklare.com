@@ -18,16 +18,16 @@ export default function Home() {
               <p>programutvecklare</p>
             </a>
             <div className="flex flex-wrap justify-end pr-10">
-              <a href="#info" className="pl-5 py-2">
+              <a href="#info" className="pl-5 pt-2">
                 Info
               </a>
-              <a href="#application" className="pl-5 py-2">
+              <a href="#application" className="pl-5 pt-2">
                 Ansökan
               </a>
-              <a href="#videos" className="pl-5 py-2">
+              <a href="#videos" className="pl-5 pt-2">
                 Videor
               </a>
-              <a href="#contact" className="pl-5 py-2">
+              <a href="#contact" className="pl-5 pt-2">
                 Kontakt
               </a>
             </div>
@@ -37,10 +37,10 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-around m-10 mb-32 mt-20 xl:mt-24 2xl:mt-56">
         <div className="text-center 2xl:text-left mt-6 2xl:mt-0">
-          <h1 className="text-3xl xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
+          <h1 className="text-4xl xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
             programmering
           </h1>
-          <h2 className="text-3xl xl:text-8xl">för allihopa</h2>
+          <h2 className="text-4xl xl:text-8xl">för allihopa</h2>
         </div>
         <Image
           src={"/main.webp"}
@@ -61,7 +61,10 @@ export default function Home() {
         <h2 className="text-gray-400 text-4xl 2xl:text-6xl mt-3">
           Allt möjligt!
         </h2>
-        <p className="mt-5">Lorem Ipsum is simply dummy text of the printing</p>
+        <p className="mt-5">
+          Vid denna bransch arbetar du med webbapplikationer och kommer att lära
+          dig full stack.
+        </p>
       </section>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-4 lg:mx-36 mt-10">
         <div>
@@ -82,71 +85,67 @@ export default function Home() {
 
       <section
         id="application"
-        className="flex flex-col items-center 2xl:flex-row justify-between px-4 2xl:px-36 2xl:mt-44 mb-20"
+        className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36 xl:mt-44 mb-20"
       >
-        <div className="2xl:w-[60%] 2xl:pr-8">
-          <h1 className="text-4xl 2xl:text-6xl mt-20">Ansökan</h1>
+        <div className="xl:w-[60%] xl:pr-8">
+          <h1 className="text-4xl xl:text-6xl mt-24">Ansökan</h1>
           <h2 className="text-gray-400 text-xl mt-3 max-w-[1000px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to{" "}
+            Vill du lära dig att programmera?
           </h2>
           <div className="mt-5">
-            <div className="w-full h-[80px] rounded-3xl bg-[#48922E] flex justify-center items-center">
-              <div className="text-xl 2xl:text-2xl text-center flex flex-col 2xl:flex-row">
-                <p className="2xl:mr-3">
+            <div className="w-full xl:w-auto h-[90px] rounded-3xl bg-[#48922E] flex justify-center items-center">
+              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row mx-10">
+                <p className="xl:mx-3">
                   Grunder inom informations- och kommunikationsteknik
                 </p>
-                <p className="2xl:mr-5 font-bold">25 kp</p>
+                <p className="font-bold">25 kp</p>
               </div>
             </div>
-            <div className="w-full 2xl:w-auto h-[80px] rounded-3xl mt-5 bg-[#925E2E] flex justify-center items-center">
-              <div className="text-xl 2xl:text-2xl text-center flex flex-col 2xl:flex-row">
-                <p className="2xl:mr-3">Programmering</p>
-                <p className="2xl:mr-5 font-bold">20 kp</p>
+            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#925E2E] flex justify-center items-center">
+              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
+                <p className="xl:mx-3">Programmering</p>
+                <p className="font-bold">20 kp</p>
               </div>
             </div>
-            <div className="w-full 2xl:w-auto h-[80px] rounded-3xl mt-5 bg-[#925E2E] flex justify-center items-center">
-              <div className="text-xl 2xl:text-2xl text-center flex flex-col 2xl:flex-row">
-                <p className="2xl:mr-3">Utveckling av programvara</p>
-                <p className="2xl:mr-5 font-bold">20 kp</p>
+            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#925E2E] flex justify-center items-center">
+              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
+                <p className="xl:mx-3">Utveckling av programvara</p>
+                <p className="font-bold">20 kp</p>
               </div>
             </div>
-            <div className="w-full 2xl:w-auto h-[80px] rounded-3xl mt-5 bg-[#92402E] flex justify-center items-center">
-              <div className="text-xl 2xl:text-2xl text-center flex flex-col 2xl:flex-row">
-                <p className="2xl:mr-3">Lorem Ipsum</p>
-                <p className="2xl:mr-5 font-bold">25 kp</p>
+            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#92402E] flex justify-center items-center">
+              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
+                <p className="xl:mx-3">Lorem Ipsum</p>
+                <p className="font-bold">25 kp</p>
               </div>
             </div>
-            <div className="w-full 2xl:w-auto h-[80px] rounded-3xl mt-5 bg-[#92402E]  flex justify-center items-center">
-              <div className="text-xl 2xl:text-2xl text-center flex flex-col 2xl:flex-row">
-                <p className="2xl:mr-3">Lorem Ipsum</p>
-                <p className="2xl:mr-5 font-bold">25 kp</p>
+            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#92402E]  flex justify-center items-center">
+              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
+                <p className="xl:mx-3">Lorem Ipsum</p>
+                <p className="font-bold">25 kp</p>
               </div>
             </div>
-            <div className="w-full 2xl:w-auto h-[80px] rounded-3xl mt-5 bg-[#2E7492] flex justify-center items-center">
-              <div className="text-xl 2xl:text-2xl text-center flex flex-col 2xl:flex-row">
-                <p className="2xl:mr-3">Lorem Ipsum</p>
-                <p className="2xl:mr-5 font-bold">25 kp</p>
+            <div className="w-full xl:w-auto h-[90px] rounded-3xl mt-5 bg-[#2E7492] flex justify-center items-center">
+              <div className="text-xl xl:text-2xl text-center flex flex-col xl:flex-row">
+                <p className="xl:mx-3">Lorem Ipsum</p>
+                <p className="font-bold">25 kp</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-row 2xl:flex-col 2xl:justify-between 2xl:px-10 lg:px-20">
+        <div className="flex flex-row xl:flex-col xl:justify-between xl:px-10 lg:px-20">
           <Image
             src={"/startup.svg"}
             width={1280}
             height={720}
             alt="Startup"
-            className="w-1/2 2xl:w-auto 2xl:h-96"
+            className="w-1/2 xl:w-auto xl:h-96"
           />
-          <div className="2xl:ml-10 lg:ml-20 mt-5">
-            <p className="text-2xl xl:text-4xl text-[#ACE0E7]">Du lär dig:</p>
-            <ul className="list-disc text-sm xl:text-2xl mt-2">
+          <div className="xl:ml-10 lg:ml-20 mt-5">
+            <p className="text-xl lg:text-4xl text-[#ACE0E7]">Du lär dig:</p>
+            <ul className="list-disc text-sm lg:text-xl mt-2">
               <li>HTML, CSS och JavaScript</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
+              <li>olika frameworks</li>
               <li>och mera...</li>
             </ul>
           </div>
@@ -158,7 +157,7 @@ export default function Home() {
         className="flex flex-col items-center mx-6 2xl:mx-0 2xl:mb-56"
       >
         <h1 className="text-2xl 2xl:text-5xl text-center 2xl:mt-40">
-          Vad gör vi vid programutvecklare?
+          Vad händer vid programutvecklare?
         </h1>
         <div className="flex flex-col 2xl:flex-row mt-7">
           <div className="mx-auto 2xl:mx-10 flex items-center flex-col">
@@ -168,10 +167,8 @@ export default function Home() {
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
-            <h2 className="text-gray-400 text-xl mt-7 max-w-[550px]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s
+            <h2 className="text-gray-400 text-xl mt-7">
+              Här är en programutvecklare som jobbar på en uppgift.
             </h2>
           </div>
         </div>
@@ -187,6 +184,9 @@ export default function Home() {
         <h2 className="text-gray-400 text-2xl 2xl:text-4xl mt-3 text-center">
           Vi vill gärna höra från dig!
         </h2>
+        <h2 className="text-gray-600 text-xl mt-3 text-center">
+          Funkar inte ännu.
+        </h2>
         <form className="2xl:mt-10 w-full lg:w-[600px] flex flex-col items-center">
           <input
             type="text"
@@ -199,19 +199,19 @@ export default function Home() {
             className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 mt-5"
           />
           <textarea
-            className="w-full 2xl:w-[600px] h-[200px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 py-3 2xl:py-5 mt-5"
+            className="w-full 2xl:w-[600px] h-[170px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 py-3 2xl:py-5 mt-5"
             placeholder="Meddelande"
           ></textarea>
           <button
             type="submit"
-            className="w-full 2xl:w-[600px] h-[80px] rounded-3xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold text-white hover:bg-[#55b133] transition duration-300 ease-in-out"
+            className="w-full 2xl:w-[600px] h-[90px] rounded-3xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold text-white hover:bg-[#55b133] transition duration-300 ease-in-out"
           >
             Skicka
           </button>
         </form>
       </section>
 
-      <footer className="bg-gray-900 mt-10 2xl:mt-24 w-full">
+      <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
           <p className="text-[13px] 2xl:text-lg">© 2023 Optima</p>
           <a href="https://optimaedu.fi/sv/">
