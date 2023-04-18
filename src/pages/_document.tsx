@@ -2,8 +2,11 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" className="scroll-smooth">
-      <title>programutvecklare - Optima</title>
+    <Html
+      lang="en"
+      className="scroll-smooth scrollbar scrollbar-w-[6px] scrollbar-h-[6px] scrollbar-thumb-[#1d2b69] scrollbar-track-[#0c1024]"
+    >
+      <title>Programutvecklare - Optima</title>
       <Head />
       <body className="bg-[#0c1024] text-white font-montserrat">
         <Main />

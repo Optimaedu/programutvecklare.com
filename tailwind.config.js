@@ -13,6 +13,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("tailwind-scrollbar")({ nocompatible: true }),
     function ({ addUtilities }) {
       addUtilities({
         ".bg-clip-text": {

@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Range from "./components/range";
 
 export default function Home() {
   return (
     <>
       <div className="bg-bg h-[200%] bg-no-repeat bg-cover w-full absolute z-[-10]" />
-      <nav id="main" className="flex items-center p-5 pt-12">
-        <div className="fixed top-0 w-full py-4">
-          <div className="flex justify-between">
+      <nav id="main" className="flex items-center px-3 2xl:p-5 2xl:pt-12">
+        <div className="2xl:fixed top-0 w-full py-4">
+          <div className="flex items-start justify-between">
             <a href="#main" className="flex flex-col mr-5 ml-1">
               <Image
                 src={"/logo.webp"}
@@ -15,92 +16,91 @@ export default function Home() {
                 alt="Logo"
                 className="w-24"
               />
-              <p>programutvecklare</p>
+              <p>Programutvecklare</p>
             </a>
-            <div className="flex flex-wrap justify-end pr-10">
-              <a href="#info">
-                <p className="hover:text-[#9f9f9f] pl-5 pt-2">Info</p>
+            <div className="flex flex-wrap justify-end 2xl:pr-8">
+              <a href="#info" className="m-2">
+                <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
+                  Info
+                </p>
               </a>
-              <a href="#application">
-                <p className="hover:text-[#9f9f9f] pl-5 pt-2">Kurser</p>
+              <a href="#courses" className="m-2">
+                <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
+                  Kurser
+                </p>
               </a>
-              <a href="#videos">
-                <p className="hover:text-[#9f9f9f] pl-5 pt-2">Video</p>
+              <a href="#videos" className="m-2">
+                <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
+                  Video
+                </p>
               </a>
-              <a href="#contact">
-                <p className="hover:text-[#9f9f9f] pl-5 pt-2">Kontakt</p>
+              <a href="#contact" className="m-2">
+                <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
+                  Kontakt
+                </p>
               </a>
             </div>
           </div>
         </div>
       </nav>
 
-      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-around mx-24 mb-32 mt-20 xl:mt-24 2xl:mt-56">
+      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-between mx-5 lg:mx-36 mt-0 xl:mt-24 2xl:mt-56 xl:mb-16">
         <div className="text-center 2xl:text-left mt-6 2xl:mt-0">
           <h1 className="text-4xl xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
-            programmering
+            Programmering
           </h1>
           <h2 className="text-4xl xl:text-8xl">för allihopa</h2>
+          <Range link="https://optimaedu.fi/sv/" />
         </div>
-        <button></button>
-        <Image
-          src={"/main.webp"}
-          width={1920}
-          height={1080}
-          alt="Main Image"
-          className="rounded-3xl w-full max-w-[655px] mt-6 2xl:mt-0"
-        />
+        <div className="max-w-[655px] w-full lg:w-auto lg:max-w-none 2xl:ml-12 mt-5">
+          <Image
+            src="/main.webp"
+            width={1920}
+            height={1080}
+            alt="Main Image"
+            className="w-full rounded-3xl"
+          />
+        </div>
       </main>
 
       <section
         id="info"
-        className="flex flex-col text-center mx-7 2xl:mx-36 2xl:text-left"
+        className="mx-5 mt-20 2xl:mt-0 lg:mx-36 flex flex-col-reverse items-center lg:items-start lg:flex-row lg:justify-between xl:pt-48"
       >
-        <h1 className="text-4xl 2xl:text-6xl mt-32 2xl:mt-40">
-          Vad är det vi gör här?
-        </h1>
-        <h2 className="text-gray-400 text-4xl 2xl:text-6xl mt-3">
-          Allt möjligt!
-        </h2>
-        <p className="mt-5">
-          Vid denna bransch arbetar du med webbapplikationer och kommer att lära
-          dig full stack.
-        </p>
+        <div className="max-w-[655px] w-[50%] lg:w-[40%] lg:max-w-none lg:mr-12 mt-10">
+          <Image
+            src="/image.webp"
+            width={1920}
+            height={1080}
+            alt="Image"
+            className="w-full rounded-3xl"
+          />
+        </div>
+        <div className="mt-10">
+          <h1 className="text-3xl lg:text-4xl text-center lg:text-right lg:mb-3 max-w-[655px]">
+            Vad är det vi gör här?
+          </h1>
+          <p className="mt-5 text-xl text-center lg:text-right max-w-[655px]">
+            Vid denna bransch arbetar du med webbapplikationer och kommer att
+            lära dig full stack.
+          </p>
+        </div>
       </section>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-4 lg:mx-36 mt-10">
-        <div>
-          <img
-            src={"/imagea.webp"}
-            alt="Image 1"
-            className="w-full h-[200px] lg:h-[300px] 2xl:h-[400px] object-cover rounded-3xl"
-          />
-        </div>
-        <div>
-          <img
-            src={"/imageb.webp"}
-            alt="Image 2"
-            className="w-full h-[200px] lg:h-[300px] 2xl:h-[400px] object-cover rounded-3xl"
-          />
-        </div>
-      </div>
 
       <section
-        id="application"
-        className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36 xl:mt-44 mb-20"
+        id="courses"
+        className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36 mb-0 xl:mb-24"
       >
         <div className="xl:w-[60%] xl:pr-8">
-          <h1 className="text-4xl xl:text-6xl mt-24">Kurser</h1>
-          <h2 className="text-gray-400 text-xl mt-3 max-w-[1000px]">
-            Här är allt vi lär oss vid programutvecklare.
-          </h2>
+          <h1 className="text-4xl lg:text-5xl mt-24">Kurser</h1>
           <div className="mt-5 space-y-5 lg:space-y-3">
-            <div className="w-full h-20 rounded-3xl bg-[#b55912] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#48922E] flex justify-center items-center">
               <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Grundexamen i informations- och kommunikationsteknik</p>
                 <p className="font-bold">180 kp</p>
               </div>
             </div>
-            <div className="w-full h-20 rounded-3xl bg-[#48922E] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
               <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
                 <p>
                   Grundläggande uppgifter inom informations- och
@@ -109,19 +109,19 @@ export default function Home() {
                 <p className="font-bold">25 kp</p>
               </div>
             </div>
-            <div className="w-full h-20 rounded-3xl bg-[#48922E] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
               <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Programmering</p>
                 <p className="font-bold">45 kp</p>
               </div>
             </div>
-            <div className="w-full h-20 rounded-3xl bg-[#48922E] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
               <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Arbete som programvaruutvecklare</p>
                 <p className="font-bold">45 kp</p>
               </div>
             </div>
-            <div className="w-full h-20 rounded-3xl bg-[#2E7492] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#2E7492] flex justify-center items-center">
               <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Implementering av programvara med komponentbibliotek</p>
                 <p className="font-bold">30 kp</p>
@@ -132,8 +132,8 @@ export default function Home() {
         <div className="flex flex-row xl:flex-col xl:justify-between xl:px-10 lg:px-20">
           <Image
             src={"/startup.svg"}
-            width={1280}
-            height={720}
+            width={1920}
+            height={1080}
             alt="Startup"
             className="w-1/2 xl:w-auto xl:h-96"
           />
@@ -141,8 +141,8 @@ export default function Home() {
             <p className="text-xl lg:text-4xl text-[#ACE0E7]">Vi lär dig:</p>
             <ul className="list-disc text-sm lg:text-xl mt-2">
               <li>HTML, CSS och JavaScript</li>
+              <li>Next.js</li>
               <li>Node.js</li>
-              <li>Next.js m.m</li>
               <li>och mera...</li>
             </ul>
           </div>
@@ -151,64 +151,68 @@ export default function Home() {
 
       <section
         id="videos"
-        className="flex flex-col items-center mx-6 2xl:mx-0 2xl:mb-56"
+        className="mt-10 lg:pt-5 2xl:mt-0 mx-10 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
-        <h1 className="text-2xl 2xl:text-5xl text-center 2xl:mt-40">
-          Vad händer vid programutvecklare?
-        </h1>
-        <div className="flex flex-col 2xl:flex-row mt-7">
-          <div className="mx-auto 2xl:mx-10 flex items-center flex-col">
+        <div className="flex-1">
+          <div className="relative pb-[56.25%]">
             <iframe
-              className="rounded-3xl w-full h-48 2xl:w-[800px] 2xl:h-[450px] lg:w-[720px] lg:h-[405px]"
+              className="absolute inset-0 w-full h-full rounded-3xl"
               src="https://www.youtube.com/embed/4CgciCxtwz4?controls=0"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
-            <h2 className="text-gray-400 text-xl mt-7">
-              Här är en programutvecklare som jobbar på en uppgift.
-            </h2>
           </div>
+        </div>
+        <div className="flex-1">
+          <h1 className="text-3xl lg:text-4xl mb-3 text-left lg:text-right">
+            Vad händer vid programutvecklare?
+          </h1>
+          <h2 className="text-gray-400 text-xl text-left lg:text-right mb-5 xl:mb-0">
+            Här är en programutvecklare som jobbar på en uppgift.
+          </h2>
         </div>
       </section>
 
       <section
         id="contact"
-        className="flex flex-col justify-center items-center px-6 2xl:px-0"
+        className="mx-5 mt-20 2xl:mt-0 lg:mx-36 flex flex-col items-center xl:items-start xl:flex-row xl:justify-between"
       >
-        <h1 className="text-3xl 2xl:text-6xl mt-20 2xl:mt-10 text-center">
-          Kontakta oss
-        </h1>
-        <h2 className="text-gray-400 text-2xl 2xl:text-4xl mt-3 text-center">
-          Vi vill gärna höra från dig!
-        </h2>
-        <h2 className="text-gray-600 text-xl mt-3 text-center">
-          Funkar inte ännu.
-        </h2>
-        <form className="2xl:mt-10 w-full lg:w-[600px] flex flex-col items-center">
+        <div>
+          <h1 className="text-4xl lg:text-5xl mt-5 xl:mt-20 text-center xl:text-left">
+            Kontakta oss
+          </h1>
+          <h2 className="text-gray-400 text-xl mt-3 text-center xl:text-left">
+            Vi vill gärna höra från dig!
+          </h2>
+          <p className="text-gray-600 text-xl mt-3 text-center xl:text-left">
+            Funkar inte ännu.
+          </p>
+        </div>
+        <form className="xl:mt-10 w-full sm:w-[600px] flex flex-col items-center">
           <input
             type="text"
             placeholder="Namn"
-            className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 mt-5"
+            className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl xl:text-2xl bg-gray-800 px-4 xl:px-10 mt-5"
           />
           <input
             type="email"
             placeholder="Email"
-            className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 mt-5"
+            className="w-full xl:w-[600px] h-[80px] rounded-xl text-xl xl:text-2xl bg-gray-800 px-4 xl:px-10 mt-5"
           />
           <textarea
-            className="w-full 2xl:w-[600px] h-[170px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 py-3 2xl:py-5 mt-5"
+            className="w-full xl:w-[600px] h-[170px] rounded-xl text-xl xl:text-2xl bg-gray-800 px-4 xl:px-10 py-3 xl:py-5 mt-5"
             placeholder="Meddelande"
           ></textarea>
           <button
             type="submit"
-            className="w-full 2xl:w-[600px] h-[90px] rounded-3xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold text-white hover:bg-[#55b133] transition duration-300 ease-in-out"
+            className="w-full xl:w-[600px] h-[90px] rounded-xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold hover:bg-[#55b133] transition duration-300 ease-in-out"
           >
             Skicka
           </button>
         </form>
       </section>
 
-      <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
+      <footer className="bg-gray-900 mt-10 2xl:mt-24 w-full">
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
           <p className="text-[13px] 2xl:text-lg text-[#ffffe6de]">
             © 2023 Optima

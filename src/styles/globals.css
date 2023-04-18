@@ -2,12 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-::-webkit-scrollbar {
-  @apply h-[7px] w-[5px];
-}
-::-webkit-scrollbar-track {
-  @apply bg-[#0c1024];
-}
-::-webkit-scrollbar-thumb {
-  @apply bg-[#1d2b69];
-}
