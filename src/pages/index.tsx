@@ -4,19 +4,31 @@ import Range from "./components/range";
 export default function Home() {
   return (
     <>
-      <div className="bg-bg h-[200%] bg-no-repeat bg-cover w-full absolute z-[-10]" />
-      <nav id="main" className="flex items-center px-3 2xl:p-5 2xl:pt-12">
-        <div className="2xl:fixed top-0 w-full py-4">
+      <div className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-10]" />
+      <nav id="main" className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12">
+        <div className="2xl:fixed top-0 w-full py-3">
           <div className="flex items-start justify-between">
-            <a href="#main" className="flex flex-col mr-5 ml-1">
+            <a
+              href="#main"
+              className="flex justify-center items-center gap-3"
+            >
               <Image
-                src={"/logo.webp"}
+                src={"/logohd.webp"}
                 width={1080}
                 height={720}
                 alt="Logo"
-                className="w-24"
+                className="w-10 pl-3 sm:pl-1 pt-2"
               />
-              <p>Programutvecklare</p>
+              <div className="flex flex-col">
+                <Image
+                  src={"/optima.webp"}
+                  width={1080}
+                  height={720}
+                  alt="Logo"
+                  className="w-20"
+                />
+                <p className="text-sm">Programutvecklare</p>
+              </div>
             </a>
             <div className="flex flex-wrap justify-end 2xl:pr-8">
               <a href="#info" className="m-2">
@@ -44,7 +56,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-between mx-5 lg:mx-36 mt-0 xl:mt-24 2xl:mt-56 xl:mb-16">
+      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-between mx-5 lg:mx-36 mt-0 xl:mt-12 2xl:mt-56 xl:mb-16">
         <div className="text-center 2xl:text-left mt-6 2xl:mt-0">
           <h1 className="text-4xl xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
             Programmering
@@ -89,19 +101,19 @@ export default function Home() {
 
       <section
         id="courses"
-        className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36 mb-0 xl:mb-24"
+        className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36 mb-0"
       >
         <div className="xl:w-[60%] xl:pr-8">
           <h1 className="text-4xl lg:text-5xl mt-24">Kurser</h1>
           <div className="mt-5 space-y-5 lg:space-y-3">
             <div className="w-full max-h-42 p-4 rounded-3xl bg-[#48922E] flex justify-center items-center">
-              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+              <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Grundexamen i informations- och kommunikationsteknik</p>
                 <p className="font-bold">180 kp</p>
               </div>
             </div>
             <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
-              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+              <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>
                   Grundläggande uppgifter inom informations- och
                   kommunikationsteknik
@@ -110,19 +122,19 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
-              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+              <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Programmering</p>
                 <p className="font-bold">45 kp</p>
               </div>
             </div>
             <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
-              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+              <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Arbete som programvaruutvecklare</p>
                 <p className="font-bold">45 kp</p>
               </div>
             </div>
             <div className="w-full max-h-42 p-4 rounded-3xl bg-[#2E7492] flex justify-center items-center">
-              <div className="text-base lg:text-xl text-center mx-4 lg:mx-8">
+              <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Implementering av programvara med komponentbibliotek</p>
                 <p className="font-bold">30 kp</p>
               </div>
@@ -138,8 +150,8 @@ export default function Home() {
             className="w-1/2 xl:w-auto xl:h-96"
           />
           <div className="xl:ml-10 lg:ml-20 mt-5">
-            <p className="text-xl lg:text-4xl text-[#ACE0E7]">Vi lär dig:</p>
-            <ul className="list-disc text-sm lg:text-xl mt-2">
+            <p className="text-2xl lg:text-4xl text-[#ACE0E7]">Vi lär dig:</p>
+            <ul className="list-disc text-lg lg:text-xl mt-2">
               <li>HTML, CSS och JavaScript</li>
               <li>Next.js</li>
               <li>Node.js</li>
@@ -151,7 +163,7 @@ export default function Home() {
 
       <section
         id="videos"
-        className="mt-10 lg:pt-5 2xl:mt-0 mx-10 xl:mx-36 flex flex-col-reverse lg:flex-row"
+        className="mt-10 lg:pt-5 2xl:mb-12 2xl:mt-20 mx-10 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
@@ -164,7 +176,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1">
-          <h1 className="text-3xl lg:text-4xl mb-3 text-left lg:text-right">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl mb-3 text-left lg:text-right">
             Vad händer vid programutvecklare?
           </h1>
           <h2 className="text-gray-400 text-xl text-left lg:text-right mb-5 xl:mb-0">
@@ -175,51 +187,49 @@ export default function Home() {
 
       <section
         id="contact"
-        className="mx-5 mt-20 2xl:mt-0 lg:mx-36 flex flex-col items-center xl:items-start xl:flex-row xl:justify-between"
+        className="flex flex-col justify-center items-center px-6 2xl:px-0"
       >
-        <div>
-          <h1 className="text-4xl lg:text-5xl mt-5 xl:mt-20 text-center xl:text-left">
-            Kontakta oss
-          </h1>
-          <h2 className="text-gray-400 text-xl mt-3 text-center xl:text-left">
-            Vi vill gärna höra från dig!
-          </h2>
-          <p className="text-gray-600 text-xl mt-3 text-center xl:text-left">
-            Funkar inte ännu.
-          </p>
-        </div>
-        <form className="xl:mt-10 w-full sm:w-[600px] flex flex-col items-center">
+        <h1 className="text-3xl 2xl:text-6xl mt-20 2xl:mt-10 text-center">
+          Kontakta oss
+        </h1>
+        <h2 className="text-gray-400 text-2xl 2xl:text-4xl mt-3 text-center">
+          Vi vill gärna höra från dig!
+        </h2>
+        <h2 className="text-gray-600 text-xl mt-3 text-center">
+          Funkar inte ännu.
+        </h2>
+        <form className="2xl:mt-10 w-full sm:w-[600px] flex flex-col items-center">
           <input
             type="text"
             placeholder="Namn"
-            className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl xl:text-2xl bg-gray-800 px-4 xl:px-10 mt-5"
+            className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 mt-5"
           />
           <input
             type="email"
             placeholder="Email"
-            className="w-full xl:w-[600px] h-[80px] rounded-xl text-xl xl:text-2xl bg-gray-800 px-4 xl:px-10 mt-5"
+            className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 mt-5"
           />
           <textarea
-            className="w-full xl:w-[600px] h-[170px] rounded-xl text-xl xl:text-2xl bg-gray-800 px-4 xl:px-10 py-3 xl:py-5 mt-5"
+            className="w-full 2xl:w-[600px] h-[170px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 py-3 2xl:py-5 mt-5"
             placeholder="Meddelande"
           ></textarea>
           <button
             type="submit"
-            className="w-full xl:w-[600px] h-[90px] rounded-xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold hover:bg-[#55b133] transition duration-300 ease-in-out"
+            className="w-full 2xl:w-[600px] h-[90px] rounded-3xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold text-white hover:bg-[#55b133] transition duration-300 ease-in-out"
           >
             Skicka
           </button>
         </form>
       </section>
 
-      <footer className="bg-gray-900 mt-10 2xl:mt-24 w-full">
+      <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
           <p className="text-[13px] 2xl:text-lg text-[#ffffe6de]">
             © 2023 Optima
           </p>
           <a href="https://optimaedu.fi/sv/">
             <Image
-              src={"/logo.webp"}
+              src={"/optima.webp"}
               width={1280}
               height={720}
               alt="Logo"
@@ -230,7 +240,7 @@ export default function Home() {
             <a
               href="https://www.facebook.com/optimaedu.fi/"
               target="_blank"
-              className="mr-1"
+              className="mr-1 hover:bg-[#9f9f9f48] rounded-full transition duration-300 ease-in-out"
             >
               <Image
                 src={"/facebook-logo-bold.svg"}
@@ -242,7 +252,7 @@ export default function Home() {
             <a
               href="https://www.instagram.com/optimaedu/"
               target="_blank"
-              className="mr-1"
+              className="mr-1 hover:bg-[#9f9f9f48] rounded-full transition duration-300 ease-in-out"
             >
               <Image
                 src={"/instagram-logo-bold.svg"}
@@ -254,7 +264,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/company/optima-yrkesutbildning/"
               target="_blank"
-              className="mr-1"
+              className="mr-1 hover:bg-[#9f9f9f48] rounded-full transition duration-300 ease-in-out"
             >
               <Image
                 src={"/linkedin-logo-bold.svg"}
@@ -266,7 +276,7 @@ export default function Home() {
             <a
               href="https://www.youtube.com/channel/UCqDRl3XxAuA-96pTAkf_lJw"
               target="_blank"
-              className="mr-1"
+              className="mr-1 hover:bg-[#9f9f9f48] rounded-full transition duration-300 ease-in-out"
             >
               <Image
                 src={"/youtube-logo-bold.svg"}
