@@ -1,19 +1,19 @@
 import Image from "next/image";
-import Range from "./components/range";
+import Slider from "./components/slider";
 
 export default function Home() {
   return (
     <>
       <div className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-10]" />
-      <nav id="main" className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12">
+      <nav
+        id="main"
+        className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12"
+      >
         <div className="2xl:fixed top-0 w-full py-3">
           <div className="flex items-start justify-between">
-            <a
-              href="#main"
-              className="flex justify-center items-center gap-3"
-            >
+            <a href="#main" className="flex justify-center items-center gap-3">
               <Image
-                src={"/logohd.webp"}
+                src={"/logo.webp"}
                 width={1080}
                 height={720}
                 alt="Logo"
@@ -30,7 +30,7 @@ export default function Home() {
                 <p className="text-sm">Programutvecklare</p>
               </div>
             </a>
-            <div className="flex flex-wrap justify-end 2xl:pr-8">
+            <div className="flex flex-wrap justify-end sm:pr-3.5 2xl:pr-8">
               <a href="#info" className="m-2">
                 <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
                   Info
@@ -62,7 +62,7 @@ export default function Home() {
             Programmering
           </h1>
           <h2 className="text-4xl xl:text-8xl">för allihopa</h2>
-          <Range link="https://optimaedu.fi/sv/" />
+          <Slider link="https://optimaedu.fi/sv/" />
         </div>
         <div className="max-w-[655px] w-full lg:w-auto lg:max-w-none 2xl:ml-12 mt-5">
           <Image
@@ -189,7 +189,7 @@ export default function Home() {
         id="contact"
         className="flex flex-col justify-center items-center px-6 2xl:px-0"
       >
-        <h1 className="text-3xl 2xl:text-6xl mt-20 2xl:mt-10 text-center">
+        <h1 className="text-3xl 2xl:text-5xl mt-20 2xl:mt-12 text-center">
           Kontakta oss
         </h1>
         <h2 className="text-gray-400 text-2xl 2xl:text-4xl mt-3 text-center">
