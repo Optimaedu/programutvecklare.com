@@ -163,7 +163,7 @@ export default function Home() {
 
       <section
         id="video"
-        className="mt-10 lg:pt-5 2xl:mb-12 2xl:pt-20 mx-10 lg:mx-36 flex flex-col-reverse lg:flex-row"
+        className="mt-10 lg:pt-5 2xl:mb-12 2xl:pt-20 mx-5 sm:mx-20 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
@@ -224,8 +224,8 @@ export default function Home() {
       </section>
 
       <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
-        <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
-          <p className="text-[13px] 2xl:text-lg text-[#ffffe6de] font-bold">
+        <div className="flex justify-between items-center px-1.5 lg:px-3 py-6 2xl:px-7 2xl:py-5">
+          <p className="text-[15px] 2xl:text-lg text-[#ffffe6de] font-bold">
             © 2023 Optima
           </p>
           <a href="https://optimaedu.fi/sv/" target="_blank">
@@ -277,7 +277,7 @@ export default function Home() {
             <a
               href="https://www.youtube.com/channel/UCqDRl3XxAuA-96pTAkf_lJw"
               target="_blank"
-              className="mr-1 hover:bg-[#9f9f9f48] rounded-full transition duration-300 ease-in-out"
+              className="hover:bg-[#9f9f9f48] rounded-full transition duration-300 ease-in-out"
             >
               <Image
                 src={"/youtube-logo-bold.svg"}
