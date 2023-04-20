@@ -24,7 +24,7 @@ export default function Home() {
                   src={"/optima.webp"}
                   width={1080}
                   height={720}
-                  alt="Logo"
+                  alt="Optima Logo"
                   className="w-20"
                 />
                 <p className="text-sm">Programutvecklare</p>
@@ -79,7 +79,7 @@ export default function Home() {
         id="info"
         className="mx-5 mt-20 2xl:mt-0 lg:mx-36 flex flex-col-reverse items-center lg:items-start lg:flex-row lg:justify-between xl:pt-48"
       >
-        <div className="max-w-[655px] w-[50%] lg:w-[40%] lg:max-w-none lg:mr-12 mt-10">
+        <div className="max-w-[655px] w-[50%] 2xl:w-[40%] lg:max-w-none lg:mr-12 mt-10">
           <Image
             src="/image.webp"
             width={1920}
@@ -141,15 +141,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row xl:flex-col xl:justify-between xl:px-10 lg:px-20">
+        <div className="flex flex-row xl:flex-col xl:justify-between xl:px-0 lg:px-10">
           <Image
-            src={"/startup.svg"}
+            src={"/teacher_flatline.svg"}
             width={1920}
             height={1080}
-            alt="Startup"
+            alt="Teacher"
             className="w-1/2 xl:w-auto xl:h-96"
           />
-          <div className="xl:ml-10 lg:ml-20 mt-5">
+          <div className="ml-10 mt-10 xl:mt-0">
             <p className="text-2xl lg:text-4xl text-[#ACE0E7]">Vi lär dig:</p>
             <ul className="list-disc text-lg lg:text-xl mt-2">
               <li>HTML, CSS och JavaScript</li>
@@ -224,15 +224,15 @@ export default function Home() {
 
       <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
-          <p className="text-[13px] 2xl:text-lg text-[#ffffe6de]">
+          <p className="text-[13px] 2xl:text-lg text-[#ffffe6de] font-bold">
             © 2023 Optima
           </p>
-          <a href="https://optimaedu.fi/sv/">
+          <a href="https://optimaedu.fi/sv/" target="_blank">
             <Image
               src={"/optima.webp"}
               width={1280}
               height={720}
-              alt="Logo"
+              alt="Optima Logo"
               className="w-24"
             />
           </a>
