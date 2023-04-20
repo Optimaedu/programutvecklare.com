@@ -30,7 +30,7 @@ export default function Home() {
                 <p className="text-sm">Programutvecklare</p>
               </div>
             </a>
-            <div className="flex flex-wrap justify-end sm:pr-3.5 2xl:pr-8">
+            <div className="flex flex-wrap justify-end sm:pr-3.5 2xl:pr-6">
               <a href="#info" className="m-2">
                 <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
                   Info
@@ -62,7 +62,7 @@ export default function Home() {
             Programmering
           </h1>
           <h2 className="text-4xl xl:text-8xl">för allihopa</h2>
-          <Slider link="https://optimaedu.fi/sv/" />
+          <Slider href="https://opintopolku.fi/konfo/sv/koulutus/1.2.246.562.13.00000000000000000176" />
         </div>
         <div className="max-w-[655px] w-full lg:w-auto lg:max-w-none 2xl:ml-12 mt-5">
           <Image
@@ -163,7 +163,7 @@ export default function Home() {
 
       <section
         id="videos"
-        className="mt-10 lg:pt-5 2xl:mb-12 2xl:mt-20 mx-10 xl:mx-36 flex flex-col-reverse lg:flex-row"
+        className="mt-10 lg:pt-5 2xl:mb-12 2xl:pt-20 mx-10 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
@@ -176,10 +176,10 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl mb-3 text-left lg:text-right">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl lg:ml-3 mb-3 text-left lg:text-right">
             Vad händer vid programutvecklare?
           </h1>
-          <h2 className="text-gray-400 text-xl text-left lg:text-right mb-5 xl:mb-0">
+          <h2 className="text-gray-400 text-xl text-left lg:text-right mb-5 lg:ml-3 xl:mb-0">
             Här är en programutvecklare som jobbar på en uppgift.
           </h2>
         </div>
@@ -194,9 +194,6 @@ export default function Home() {
         </h1>
         <h2 className="text-gray-400 text-2xl 2xl:text-4xl mt-3 text-center">
           Vi vill gärna höra från dig!
-        </h2>
-        <h2 className="text-gray-600 text-xl mt-3 text-center">
-          Funkar inte ännu.
         </h2>
         <form className="2xl:mt-10 w-full sm:w-[600px] flex flex-col items-center">
           <input
@@ -219,6 +216,9 @@ export default function Home() {
           >
             Skicka
           </button>
+          <h2 className="text-gray-600 text-xl mt-3 text-center">
+            Funkar inte ännu.
+          </h2>
         </form>
       </section>
 

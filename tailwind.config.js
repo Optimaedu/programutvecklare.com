@@ -28,7 +28,6 @@ module.exports = {
             "box-shadow": "-425px 0 0 400px #fb923c",
           },
           "&::-moz-range-thumb": {
-
             width: "42px",
             height: "42px",
             border: "3px solid #a8a8a8",

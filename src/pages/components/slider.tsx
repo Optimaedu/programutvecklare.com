@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 interface RangeInputProps {
-  link: string;
+  href: string;
 }
 
-const Slider: React.FC<RangeInputProps> = ({ link }) => {
+const Slider: React.FC<RangeInputProps> = ({ href }) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,7 +14,7 @@ const Slider: React.FC<RangeInputProps> = ({ link }) => {
 
   const handleMouseUp = () => {
     if (value === 20) {
-      window.open(link, "_blank");
+      window.open(href, "_blank");
     }
     setValue(0);
   };
