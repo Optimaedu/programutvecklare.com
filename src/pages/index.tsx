@@ -4,12 +4,12 @@ import Slider from "./components/slider";
 export default function Home() {
   return (
     <>
-      <div className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-10]" />
+      <div className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
       <nav
         id="main"
         className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12"
       >
-        <div className="2xl:fixed top-0 w-full py-3">
+        <div className="2xl:fixed top-0 w-full py-3 z-10">
           <div className="flex items-start justify-between">
             <a href="#main" className="flex justify-center items-center gap-3">
               <Image
@@ -163,7 +163,7 @@ export default function Home() {
 
       <section
         id="video"
-        className="mt-10 lg:pt-5 2xl:mb-12 2xl:pt-20 mx-5 sm:mx-20 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
+        className="mt-10 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 sm:mx-20 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
@@ -190,10 +190,10 @@ export default function Home() {
         id="contact"
         className="flex flex-col justify-center items-center px-6 2xl:px-0"
       >
-        <h1 className="text-3xl 2xl:text-5xl mt-20 2xl:mt-12 text-center">
+        <h1 className="text-3xl lg:text-5xl mt-20 2xl:mt-12 text-center">
           Kontakta oss
         </h1>
-        <h2 className="text-gray-400 text-2xl 2xl:text-4xl mt-3 text-center">
+        <h2 className="text-gray-400 text-xl lg:text-3xl mt-1 lg:mt-3 text-center">
           Vi vill gärna höra från dig!
         </h2>
         <form className="2xl:mt-10 w-full sm:w-[600px] flex flex-col items-center">
@@ -213,7 +213,7 @@ export default function Home() {
           ></textarea>
           <button
             type="submit"
-            className="w-full 2xl:w-[600px] h-[90px] rounded-3xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold text-white hover:bg-[#55b133] transition duration-300 ease-in-out"
+            className="w-full 2xl:w-[600px] h-[90px] rounded-xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold text-white hover:bg-[#55b133] transition duration-300 ease-in-out"
           >
             Skicka
           </button>
