@@ -10,6 +10,19 @@ module.exports = {
         custom: ["-webkit-linear-gradient(#edbf91, #db7d12)"],
         behind: "url('/background.webp')",
       },
+      animation: {
+        custom: "custom 5s ease infinite",
+      },
+      keyframes: {
+        custom: {
+          "0%, 100%": {
+            "background-position": "0% 50%",
+          },
+          "50%": {
+            "background-position": "100% 50%",
+          },
+        },
+      },
     },
   },
   plugins: [

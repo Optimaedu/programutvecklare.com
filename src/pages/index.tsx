@@ -62,7 +62,7 @@ export default function Home() {
             Programmering
           </h1>
           <h2 className="text-4xl xl:text-8xl">för allihopa</h2>
-          <Slider href="https://opintopolku.fi/konfo/sv/koulutus/1.2.246.562.13.00000000000000000176" />
+          <Slider href="https://opintopolku.fi/konfo/sv/toteutus/1.2.246.562.17.00000000000000010661" />
         </div>
         <div className="max-w-[655px] w-full lg:w-auto lg:max-w-none 2xl:ml-12 mt-5">
           <Image
