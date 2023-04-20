@@ -41,7 +41,7 @@ export default function Home() {
                   Kurser
                 </p>
               </a>
-              <a href="#videos" className="m-2">
+              <a href="#video" className="m-2">
                 <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
                   Video
                 </p>
@@ -162,16 +162,17 @@ export default function Home() {
       </section>
 
       <section
-        id="videos"
-        className="mt-10 lg:pt-5 2xl:mb-12 2xl:pt-20 mx-10 xl:mx-36 flex flex-col-reverse lg:flex-row"
+        id="video"
+        className="mt-10 lg:pt-5 2xl:mb-12 2xl:pt-20 mx-10 lg:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
             <iframe
               className="absolute inset-0 w-full h-full rounded-3xl"
-              src="https://www.youtube.com/embed/4CgciCxtwz4?controls=0"
+              src="https://www.youtube.com/embed/4CgciCxtwz4"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
             ></iframe>
           </div>
         </div>
