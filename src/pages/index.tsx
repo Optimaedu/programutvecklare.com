@@ -14,16 +14,16 @@ export default function Home() {
             <a href="#main" className="flex justify-center items-center gap-3">
               <Image
                 src={"/logo.webp"}
-                width={1080}
-                height={720}
+                width={1920}
+                height={1080}
                 alt="Logo"
                 className="w-10 pl-3 sm:pl-1 pt-2"
               />
               <div className="flex flex-col">
                 <Image
                   src={"/optima.webp"}
-                  width={1080}
-                  height={720}
+                  width={1920}
+                  height={1080}
                   alt="Optima Logo"
                   className="w-20"
                 />
@@ -56,15 +56,15 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="flex flex-col items-center justify-center 2xl:flex-row 2xl:justify-between mx-5 lg:mx-36 mt-0 xl:mt-12 2xl:mt-56 xl:mb-16">
-        <div className="text-center 2xl:text-left mt-6 2xl:mt-0">
-          <h1 className="text-4xl xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
+      <main className="flex flex-col items-center justify-center xl:flex-row xl:justify-between mx-5 lg:mx-36 mt-0 xl:mt-48 mb-0 sm:mb-32 xl:mb-[22rem]">
+        <div className="text-center xl:text-left mt-6 xl:mt-0">
+          <h1 className="text-4xl xl:text-7xl 2xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
             Programmering
           </h1>
-          <h2 className="text-4xl xl:text-8xl">för allihopa</h2>
+          <h2 className="text-4xl xl:text-7xl 2xl:text-8xl">för allihopa</h2>
           <Slider href="https://opintopolku.fi/konfo/sv/toteutus/1.2.246.562.17.00000000000000010661" />
         </div>
-        <div className="max-w-[655px] w-full lg:w-auto lg:max-w-none 2xl:ml-12 mt-5">
+        <div className="max-w-[655px] w-full lg:w-auto lg:max-w-none xl:ml-12 mt-5">
           <Image
             src="/main.webp"
             width={1920}
@@ -75,36 +75,33 @@ export default function Home() {
         </div>
       </main>
 
-      <section
-        id="info"
-        className="mx-5 mt-20 2xl:mt-0 lg:mx-36 flex flex-col-reverse items-center lg:items-start lg:flex-row lg:justify-between xl:pt-48"
-      >
-        <div className="max-w-[655px] w-[50%] 2xl:w-[40%] lg:max-w-none lg:mr-12 mt-10">
-          <Image
-            src="/image.webp"
-            width={1920}
-            height={1080}
-            alt="Image"
-            className="w-full rounded-3xl"
-          />
-        </div>
-        <div className="mt-10">
-          <h1 className="text-3xl lg:text-4xl text-center lg:text-right lg:mb-3 max-w-[655px]">
-            Vad är det vi gör här?
-          </h1>
-          <p className="mt-5 text-xl text-center lg:text-right max-w-[655px]">
-            Vid denna bransch arbetar du med webbapplikationer och kommer att
-            lära dig full stack.
-          </p>
+      <section id="info" className="relative sm:pt-20 pt-32">
+        <Image
+          width={1920}
+          height={1080}
+          src="/image.webp"
+          alt="Main Image"
+          className="absolute sm:bottom-0 bottom-[-260px] left-0 w-full h-full object-cover z-[-9]"
+        />
+        <div className="flex justify-end">
+          <div className="px-5 sm:px-10 lg:px-36 py-0 sm:py-36">
+            <h1 className="text-right text-2xl sm:text-3xl lg:text-4xl sm:bg-[#141b3d] sm:rounded-t-xl sm:pt-8 sm:pb-2 sm:px-8">
+              Vad är det vi gör här?
+            </h1>
+            <p className="text-right text-gray-400 text-xl max-w-[655px] sm:bg-[#141b3d] sm:rounded-b-xl sm:pb-8 sm:px-8">
+              Vid denna bransch arbetar du med webbapplikationer och kommer att
+              lära dig full stack.
+            </p>
+          </div>
         </div>
       </section>
 
       <section
         id="courses"
-        className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36 mb-0"
+        className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36 pt-44 sm:pt-0 mb-0"
       >
         <div className="xl:w-[60%] xl:pr-8">
-          <h1 className="text-4xl lg:text-5xl mt-24">Kurser</h1>
+          <h1 className="text-4xl lg:text-5xl mt-32">Kurser</h1>
           <div className="mt-5 space-y-5 lg:space-y-3">
             <div className="w-full max-h-42 p-4 rounded-3xl bg-[#48922E] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
@@ -190,7 +187,7 @@ export default function Home() {
         id="contact"
         className="flex flex-col justify-center items-center px-6 2xl:px-0"
       >
-        <h1 className="text-3xl lg:text-5xl mt-20 2xl:mt-12 text-center">
+        <h1 className="text-3xl lg:text-5xl mt-10 2xl:mt-12 text-center">
           Kontakta oss
         </h1>
         <h2 className="text-gray-400 text-xl lg:text-3xl mt-1 lg:mt-3 text-center">
@@ -224,15 +221,12 @@ export default function Home() {
       </section>
 
       <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
-        <div className="flex justify-between items-center px-1.5 lg:px-3 py-6 2xl:px-7 2xl:py-5">
-          <p className="text-[15px] 2xl:text-lg text-[#ffffe6de] font-bold">
-            © 2023 Optima
-          </p>
+        <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
           <a href="https://optimaedu.fi/sv/" target="_blank">
             <Image
               src={"/optima.webp"}
-              width={1280}
-              height={720}
+              width={1920}
+              height={1080}
               alt="Optima Logo"
               className="w-24"
             />

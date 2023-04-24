@@ -9,7 +9,7 @@ export default function Document() {
       <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
       <title>Optima - Programutvecklare</title>
       <Head />
-      <body className="bg-[#0c1024] text-white font-montserrat">
+      <body className="bg-[#0c1024] text-[#ffffe6de] font-montserrat">
         <Main />
         <NextScript />
       </body>
