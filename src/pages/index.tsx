@@ -56,7 +56,7 @@ export default function Home() {
             width={1920}
             height={1080}
             alt="Main Image"
-            className="w-full rounded-3xl"
+            className="w-full rounded-xl"
           />
         </div>
       </main>
@@ -94,13 +94,13 @@ export default function Home() {
         <div className="xl:w-[60%] xl:pr-8">
           <h1 className="text-4xl lg:text-5xl mt-10 md:mt-20">Kurser</h1>
           <div className="mt-5 space-y-5 lg:space-y-3">
-            <div className="w-auto max-h-42 p-4 rounded-3xl bg-[#48922E] flex justify-center items-center">
+            <div className="w-auto max-h-42 p-4 rounded-xl bg-[#48922E] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Grundexamen i informations- och kommunikationsteknik</p>
                 <p className="font-bold">180 kp</p>
               </div>
             </div>
-            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-xl bg-[#b55912] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>
                   Grundläggande uppgifter inom informations- och
@@ -109,19 +109,19 @@ export default function Home() {
                 <p className="font-bold">25 kp</p>
               </div>
             </div>
-            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-xl bg-[#b55912] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Programmering</p>
                 <p className="font-bold">45 kp</p>
               </div>
             </div>
-            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#b55912] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-xl bg-[#b55912] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Arbete som programvaruutvecklare</p>
                 <p className="font-bold">45 kp</p>
               </div>
             </div>
-            <div className="w-full max-h-42 p-4 rounded-3xl bg-[#2E7492] flex justify-center items-center">
+            <div className="w-full max-h-42 p-4 rounded-xl bg-[#2E7492] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
                 <p>Implementering av programvara med komponentbibliotek</p>
                 <p className="font-bold">30 kp</p>
@@ -159,7 +159,7 @@ export default function Home() {
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
             <iframe
-              className="absolute inset-0 w-full h-full rounded-3xl"
+              className="absolute inset-0 w-full h-full rounded-xl"
               src="https://www.youtube.com/embed/4CgciCxtwz4"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -172,7 +172,7 @@ export default function Home() {
             Vad händer vid programutvecklare?
           </h1>
           <h2 className="text-gray-400 text-xl text-left lg:text-right mb-5 lg:ml-20 xl:mb-0 overflow-hidden">
-            Med denna korta video intervjuas William, en programutvecklare.{" "}
+            Med denna korta video intervjuas William, en programutvecklare.
             <br /> De förklarar vad vi gör vid branschen och visas hur vi
             programmerar.
           </h2>
