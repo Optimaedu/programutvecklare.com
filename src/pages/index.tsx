@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Slider from "./components/slider";
+import Dropdown from "./components/dropdown";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
         id="main"
         className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12"
       >
-        <div className="2xl:fixed top-0 w-full py-3 z-10">
+        <div className="fixed top-0 w-full py-3 z-10">
           <div className="flex items-start justify-between">
             <a href="#main" className="flex justify-center items-center gap-3">
               <Image
@@ -30,33 +32,12 @@ export default function Home() {
                 <p className="text-sm">Programutvecklare</p>
               </div>
             </a>
-            <div className="flex flex-wrap justify-end sm:pr-3.5 2xl:pr-6">
-              <a href="#info" className="m-2">
-                <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
-                  Info
-                </p>
-              </a>
-              <a href="#courses" className="m-2">
-                <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
-                  Kurser
-                </p>
-              </a>
-              <a href="#video" className="m-2">
-                <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
-                  Video
-                </p>
-              </a>
-              <a href="#contact" className="m-2">
-                <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out">
-                  Kontakt
-                </p>
-              </a>
-            </div>
+            <Dropdown />
           </div>
         </div>
       </nav>
 
-      <main className="flex flex-col items-center justify-center xl:flex-row xl:justify-between mx-5 lg:mx-36 mt-0 xl:mt-48 mb-0 sm:mb-32 xl:mb-[22rem]">
+      <main className="flex flex-col items-center justify-center xl:flex-row xl:justify-between mx-5 lg:mx-36 mt-20 xl:mt-72 2xl:mt-44 mb-0 sm:mb-32 xl:mb-[22rem]">
         <div className="text-center xl:text-left mt-6 xl:mt-0">
           <h1 className="text-4xl xl:text-7xl 2xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
             Programmering
@@ -64,7 +45,7 @@ export default function Home() {
           <h2 className="text-4xl xl:text-7xl 2xl:text-8xl">för allihopa</h2>
           <Slider href="https://opintopolku.fi/konfo/sv/toteutus/1.2.246.562.17.00000000000000010661" />
         </div>
-        <div className="max-w-[655px] w-full lg:w-auto lg:max-w-none xl:ml-12 mt-5">
+        <div className="max-w-[500px] lg:max-w-[600px] w-full xl:ml-12 mt-5">
           <Image
             src="/main.webp"
             width={1920}
@@ -138,15 +119,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row xl:flex-col xl:justify-between xl:px-0 lg:px-10">
+        <div className="flex flex-col sm:flex-row xl:flex-col xl:justify-between xl:px-0 lg:px-10">
           <Image
             src={"/teacher_flatline.svg"}
             width={1920}
             height={1080}
             alt="Teacher"
-            className="w-1/2 xl:w-auto xl:h-96"
+            className="w-full sm:w-1/2 xl:w-auto xl:h-96"
           />
-          <div className="ml-10 mt-10 xl:mt-0">
+          <div className="ml-10 sm:mt-10 xl:mt-0">
             <p className="text-2xl lg:text-4xl text-[#ACE0E7]">Vi lär dig:</p>
             <ul className="list-disc text-lg lg:text-xl mt-2">
               <li>HTML, CSS och JavaScript</li>
@@ -160,7 +141,7 @@ export default function Home() {
 
       <section
         id="video"
-        className="mt-10 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 sm:mx-20 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
+        className="mt-12 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 sm:mx-20 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
@@ -174,7 +155,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl lg:ml-3 mb-3 text-left lg:text-right">
+          <h1 className="overflow-hidden text-2xl sm:text-3xl lg:text-4xl lg:ml-3 mb-3 text-left lg:text-right">
             Vad händer vid programutvecklare?
           </h1>
           <h2 className="text-gray-400 text-xl text-left lg:text-right mb-5 lg:ml-3 xl:mb-0">
@@ -183,42 +164,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="contact"
-        className="flex flex-col justify-center items-center px-6 2xl:px-0"
-      >
-        <h1 className="text-3xl lg:text-5xl mt-10 2xl:mt-12 text-center">
-          Kontakta oss
-        </h1>
-        <h2 className="text-gray-400 text-xl lg:text-3xl mt-1 lg:mt-3 text-center">
-          Vi vill gärna höra från dig!
-        </h2>
-        <form className="2xl:mt-10 w-full sm:w-[600px] flex flex-col items-center">
-          <input
-            type="text"
-            placeholder="Namn"
-            className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 mt-5"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 mt-5"
-          />
-          <textarea
-            className="w-full 2xl:w-[600px] h-[170px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 py-3 2xl:py-5 mt-5"
-            placeholder="Meddelande"
-          ></textarea>
-          <button
-            type="submit"
-            className="w-full 2xl:w-[600px] h-[90px] rounded-xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold text-white hover:bg-[#55b133] transition duration-300 ease-in-out"
-          >
-            Skicka
-          </button>
-          <h2 className="text-gray-600 text-xl mt-3 text-center">
-            Funkar inte ännu.
-          </h2>
-        </form>
-      </section>
+      <Contact />
 
       <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
