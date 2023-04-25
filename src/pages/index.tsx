@@ -8,30 +8,35 @@ export default function Home() {
     <>
       <div className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
       <nav
-        id="main"
+        id="home"
         className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12"
       >
         <div className="fixed top-0 w-full py-3 z-10">
-          <div className="flex items-start justify-between">
-            <a href="#main" className="flex justify-center items-center gap-3">
-              <Image
-                src={"/logo.webp"}
-                width={1920}
-                height={1080}
-                alt="Logo"
-                className="w-10 pl-3 sm:pl-1 pt-2"
-              />
-              <div className="flex flex-col">
+          <div className="flex items-start justify-end md:justify-between">
+            <div className="hidden md:block">
+              <a
+                href="#home"
+                className="flex justify-center items-center gap-3"
+              >
                 <Image
-                  src={"/optima.webp"}
+                  src={"/logo.webp"}
                   width={1920}
                   height={1080}
-                  alt="Optima Logo"
-                  className="w-20"
+                  alt="Logo"
+                  className="w-10 pl-3 sm:pl-1 pt-2"
                 />
-                <p className="text-sm">Programutvecklare</p>
-              </div>
-            </a>
+                <div className="flex flex-col">
+                  <Image
+                    src={"/optima.webp"}
+                    width={1920}
+                    height={1080}
+                    alt="Optima Logo"
+                    className="w-20"
+                  />
+                  <p className="text-sm">Programutvecklare</p>
+                </div>
+              </a>
+            </div>
             <Dropdown />
           </div>
         </div>

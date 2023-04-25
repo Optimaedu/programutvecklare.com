@@ -51,6 +51,7 @@ function Dropdown() {
           </a>
         </div>
       </div>
+
       <div className="md:hidden flex justify-center mr-5">
         <div className="relative inline-block mb-20" ref={dropdownRef}>
           <button
@@ -66,32 +67,56 @@ function Dropdown() {
             ></Image>
           </button>
           {isOpen && (
-            <div className="absolute right-0 z-20 w-52 py-2 mt-2 overflow-hidden bg-white rounded-md shadow-xl dark:bg-gray-800">
+            <div className="absolute right-0 z-20 w-52 py-2 mt-2 overflow-hidden rounded-md shadow-xl bg-gray-800">
+              <a
+                href="#home"
+                className="flex items-center p-3 -mt-2 text-sm duration-200 transform hover:bg-gray-700"
+                onClick={handleClose}
+              >
+                <Image
+                  src={"/logo.webp"}
+                  width={1920}
+                  height={1080}
+                  alt="Logo"
+                  className="mx-1 w-8 mt-1"
+                />
+                <div className="mx-1">
+                  <Image
+                    src={"/optima.webp"}
+                    width={1920}
+                    height={1080}
+                    alt="Optima Logo"
+                    className="w-16"
+                  />
+                  <p className="text-sm">Programutvecklare</p>
+                </div>
+              </a>
+              <hr className="border-gray-700" />
               <a
                 href="#info"
-                className="block px-4 py-3 text-md text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block px-4 py-3 text-md duration-200 transform hover:bg-gray-700"
                 onClick={handleClose}
               >
                 Info
               </a>
               <a
                 href="#courses"
-                className="block px-4 py-3 text-md text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block px-4 py-3 text-md duration-200 transform hover:bg-gray-700"
                 onClick={handleClose}
               >
                 Kurser
               </a>
               <a
                 href="#video"
-                className="block px-4 py-3 text-md text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block px-4 py-3 text-md duration-200 transform hover:bg-gray-700"
                 onClick={handleClose}
               >
                 Video
               </a>
-              <hr className="border-gray-200 dark:border-gray-700 " />
+              <hr className="border-gray-700 " />
               <a
                 href="#contact"
-                className="block px-4 py-3 text-mdss text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block px-4 py-3 text-md duration-200 transform hover:bg-gray-700"
                 onClick={handleClose}
               >
                 Kontakt
