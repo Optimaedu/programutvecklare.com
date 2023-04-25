@@ -11,7 +11,7 @@ function Contact() {
         <h2 className="text-gray-400 text-xl lg:text-3xl mt-1 lg:mt-3 text-center">
           Vi vill gärna höra från dig!
         </h2>
-        <form className="2xl:mt-10 w-full sm:w-[600px] flex flex-col items-center">
+        <form className="2xl:mt-10 w-full md:w-[600px] flex flex-col items-center">
           <input
             type="text"
             placeholder="Namn"
@@ -23,7 +23,7 @@ function Contact() {
             className="w-full 2xl:w-[600px] h-[80px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 mt-5"
           />
           <textarea
-            className="resize-none w-full 2xl:w-[600px] h-[170px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 py-3 2xl:py-5 mt-5"
+            className="resize-none w-full 2xl:w-[600px] h-[170px] rounded-xl text-xl 2xl:text-2xl bg-gray-800 px-4 2xl:px-10 py-5 2xl:py-5 mt-5"
             placeholder="Meddelande"
           ></textarea>
           <button
