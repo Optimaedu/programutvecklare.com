@@ -6,8 +6,8 @@ import Contact from "./components/contact";
 export default function Home() {
   return (
     <>
-      <div className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
-      <nav
+      <span className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
+      <header
         id="home"
         className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12"
       >
@@ -40,7 +40,7 @@ export default function Home() {
             <Dropdown />
           </div>
         </div>
-      </nav>
+      </header>
 
       <main className="flex flex-col items-center justify-center xl:flex-row xl:justify-between mx-5 lg:mx-36 mt-16 xl:mt-72 2xl:mt-44 mb-0 md:mb-32 xl:mb-[22rem]">
         <div className="text-center xl:text-left mt-6">
