@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       </main>
 
-      <section id="info" className="relative md:pt-20 pt-32">
+      <section id="info" className="relative md:pt-20 pt-16">
         <div className="flex flex-col-reverse">
           <Image
             width={1920}
@@ -154,7 +154,7 @@ export default function Home() {
 
       <section
         id="video"
-        className="mt-12 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
+        className="pt-12 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
