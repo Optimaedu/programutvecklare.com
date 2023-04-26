@@ -6,8 +6,8 @@ import Contact from "./components/contact";
 export default function Home() {
   return (
     <>
-      <div className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
-      <nav
+      <span className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
+      <header
         id="home"
         className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12"
       >
@@ -40,7 +40,7 @@ export default function Home() {
             <Dropdown />
           </div>
         </div>
-      </nav>
+      </header>
 
       <main className="flex flex-col items-center justify-center xl:flex-row xl:justify-between mx-5 lg:mx-36 mt-16 xl:mt-72 2xl:mt-44 mb-0 md:mb-32 xl:mb-[22rem]">
         <div className="text-center xl:text-left mt-6">
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       </main>
 
-      <section id="info" className="relative md:pt-20 pt-32">
+      <section id="info" className="relative md:pt-20 pt-16">
         <div className="flex flex-col-reverse">
           <Image
             width={1920}
@@ -154,7 +154,7 @@ export default function Home() {
 
       <section
         id="video"
-        className="mt-12 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
+        className="pt-12 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
