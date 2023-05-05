@@ -72,9 +72,9 @@ export default function Home() {
           />
           <div className="flex justify-end">
             <div className="px-5 md:px-10 lg:px-36 py-0 md:py-36">
-              <h1 className="drop-shadow-2xl text-2xl md:text-3xl lg:text-4xl md:bg-[#1f264d] md:p-6 rounded-t-xl md:px-8">
+              <p className="drop-shadow-2xl text-2xl md:text-3xl lg:text-4xl md:bg-[#1f264d] md:p-6 rounded-t-xl md:px-8">
                 Varför programutvecklare?
-              </h1>
+              </p>
               <p className="text-gray-300 text-xl max-w-[800px] md:bg-[#1f264d] md:p-6 rounded-b-xl md:px-8 mb-10 md:mb-0">
                 Inom branschen för informations- och kommunikationsteknik
                 (programutvecklare, elektronikmontör) har du nytta av logiskt
@@ -92,7 +92,7 @@ export default function Home() {
         className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36"
       >
         <div className="xl:w-[60%] xl:pr-8">
-          <h1 className="text-4xl lg:text-5xl mt-10 md:mt-20">Kurser</h1>
+          <p className="text-4xl lg:text-5xl mt-10 md:mt-20">Kurser</p>
           <div className="mt-5 space-y-5 lg:space-y-3">
             <div className="w-auto max-h-42 p-4 rounded-xl bg-[#48922E] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
@@ -138,7 +138,7 @@ export default function Home() {
             className="w-full sm:w-1/2 xl:w-auto xl:h-96"
           />
           <div className="ml-10 sm:mt-10 xl:mt-0">
-            <p className="text-2xl lg:text-4xl text-[#ACE0E7]">Vi lär dig:</p>
+            <p className="text-2xl lg:text-4xl text-[#ACE0E7]">Du lär dig:</p>
             <ul className="list-disc text-lg lg:text-xl mt-2">
               <li>HTML, CSS och JavaScript</li>
               <li>TypeScript</li>
@@ -164,24 +164,25 @@ export default function Home() {
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
+              loading="lazy"
             ></iframe>
           </div>
         </div>
         <div className="flex-1">
-          <h1 className="overflow-hidden text-2xl sm:text-3xl lg:text-4xl lg:ml-10 mb-3 text-left lg:text-right">
+          <p className="overflow-hidden text-2xl sm:text-3xl lg:text-4xl lg:ml-10 mb-3 text-left lg:text-right">
             Vad händer vid programutvecklare?
-          </h1>
-          <h2 className="text-gray-400 text-xl text-left lg:text-right mb-5 lg:ml-20 xl:mb-0 overflow-hidden">
+          </p>
+          <p className="text-gray-400 text-xl text-left lg:text-right mb-5 lg:ml-20 xl:mb-0 overflow-hidden">
             Med denna korta video intervjuas William, en programutvecklare.
             <br /> De förklarar vad vi gör vid branschen och visas hur vi
             programmerar.
-          </h2>
+          </p>
         </div>
       </section>
 
       <Contact />
 
-      <footer className="bg-gray-900 mt-10 2xl:mt-20 w-full">
+      <footer className="bg-gray-900 mt-10 2xl:mt-28 w-full">
         <div className="flex justify-between items-center px-3 py-6 2xl:px-7 2xl:py-5">
           <a href="https://optimaedu.fi/sv/" target="_blank">
             <Image
