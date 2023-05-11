@@ -9,9 +9,9 @@ export default function Home() {
       <span className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
       <header
         id="home"
-        className="flex items-center pl-3 2xl:pl-4 2xl:p-5 2xl:pt-12"
+        className="flex items-center p-4 bg-[#1f264d] bg-opacity-50 shadow-xl shadow-slate-700"
       >
-        <div className="fixed top-0 w-full py-3 z-10">
+        <div className="relative w-full py-3 z-10 ">
           <div className="flex items-start justify-end md:justify-between">
             <div className="hidden md:block">
               <a
@@ -45,9 +45,9 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center xl:flex-row xl:justify-between mx-5 lg:mx-36 mt-16 xl:mt-72 2xl:mt-44 mb-0 md:mb-32 xl:mb-[22rem]">
         <div className="text-center xl:text-left mt-6">
           <h1 className="text-4xl xl:text-7xl 2xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
-            Programmering
+            Programutvecklare
           </h1>
-          <h2 className="text-4xl xl:text-7xl 2xl:text-8xl">för allihopa</h2>
+          <h2 className="text-3xl xl:text-5xl 2xl:text-6xl">“Koda världen du vill se„</h2>
           <Slider href="https://opintopolku.fi/konfo/sv/toteutus/1.2.246.562.17.00000000000000010661" />
         </div>
         <div className="max-w-[500px] lg:max-w-[600px] w-full xl:ml-12 mt-5">
@@ -72,15 +72,11 @@ export default function Home() {
           />
           <div className="flex justify-end">
             <div className="px-5 md:px-10 lg:px-36 py-0 md:py-36">
-              <h1 className="drop-shadow-2xl text-2xl md:text-3xl lg:text-4xl md:bg-[#1f264d] md:p-6 rounded-t-xl md:px-8">
+              <h1 className="drop-shadow-2xl text-2xl md:text-3xl lg:text-5xl md:bg-[#1f264d] md:p-8 rounded-t-xl md:px-8">
                 Varför programutvecklare?
               </h1>
-              <p className="text-gray-300 text-xl max-w-[800px] md:bg-[#1f264d] md:p-6 rounded-b-xl md:px-8 mb-10 md:mb-0">
-                Inom branschen för informations- och kommunikationsteknik
-                (programutvecklare, elektronikmontör) har du nytta av logiskt
-                tänkande och kreativ problemlösning. <br /> <br />
-                Du lär dig att programmera med olika programmeringsspråk, skapa
-                och underhålla webbsidor samt utveckla webbapplikationer.
+              <p className="text-gray-300 text-2xl min-h-[350px] max-w-[800px] md:bg-[#1f264d] md:p-8 rounded-b-xl md:px-8 mb-10 md:mb-0">
+                Är du passionerad för programmering och redo att ta din kunskap till en proffsnivå? Då är en utbildning inom programutveckling perfekt för dig. Genom denna utbildning kommer du inte bara att få en gedigen förståelse för hur datorer fungerar och hur de sätts ihop i nätverk, utan även lära dig om viktiga ämnen som kundhantering, allmän företagskunskap, användning av kontorsprogram och grunderna i webbutveckling.
               </p>
             </div>
           </div>
@@ -91,7 +87,7 @@ export default function Home() {
         id="courses"
         className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36"
       >
-        <div className="xl:w-[60%] xl:pr-8">
+        <div className="xl:w-[50%]">
           <h1 className="text-4xl lg:text-5xl mt-10 md:mt-20">Kurser</h1>
           <div className="mt-5 space-y-5 lg:space-y-3">
             <div className="w-auto max-h-42 p-4 rounded-xl bg-[#48922E] flex justify-center items-center">
@@ -154,7 +150,7 @@ export default function Home() {
 
       <section
         id="video"
-        className="pt-12 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
+        className="mt-10 pt-12 lg:pt-5 2xl:mb-14 2xl:pt-20 mx-5 lg:mx-24 xl:mx-36 flex flex-col-reverse lg:flex-row"
       >
         <div className="flex-1">
           <div className="relative pb-[56.25%]">
@@ -167,14 +163,12 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
-        <div className="flex-1">
-          <h1 className="overflow-hidden text-2xl sm:text-3xl lg:text-4xl lg:ml-10 mb-3 text-left lg:text-right">
+        <div className="flex-1 p-6">
+          <h1 className="overflow-hidden lg:text-center xl:text-left p-5 text-2xl sm:text-3xl lg:text-4xl mb-3 ">
             Vad händer vid programutvecklare?
           </h1>
-          <h2 className="text-gray-400 text-xl text-left lg:text-right mb-5 lg:ml-20 xl:mb-0 overflow-hidden">
-            Med denna korta video intervjuas William, en programutvecklare.
-            <br /> De förklarar vad vi gör vid branschen och visas hur vi
-            programmerar.
+          <h2 className="text-gray-400 p-5 text-xl text-justify mb-5 overflow-hidden">
+          I denna korta video får vi möjlighet att intervjua William, en studerande inom programutveckling. Han delar med sig av sin kunskap och ger oss en inblick i vad som händer inom branschen. Vi får se hur han programmerar och hur det påverkar olika områden.
           </h2>
         </div>
       </section>

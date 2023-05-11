@@ -30,22 +30,22 @@ function Dropdown() {
       <div className="md:block hidden">
         <div className="flex flex-wrap justify-end mr-5">
           <a href="#info" className="m-2">
-            <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
+            <p className="hover:text-[#9f9f9f] text-lg transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
               Info
             </p>
           </a>
           <a href="#courses" className="m-2">
-            <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
+            <p className="hover:text-[#9f9f9f] text-lg transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
               Kurser
             </p>
           </a>
           <a href="#video" className="m-2">
-            <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
+            <p className="hover:text-[#9f9f9f] text-lg transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
               Video
             </p>
           </a>
           <a href="#contact" className="m-2">
-            <p className="hover:text-[#9f9f9f] transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
+            <p className="hover:text-[#9f9f9f] text-lg transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
               Kontakt
             </p>
           </a>

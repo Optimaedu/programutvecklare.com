@@ -43,7 +43,7 @@ const Slider: React.FC<RangeInputProps> = ({ href }) => {
             />
 
             <span className="sm:ml-3 ml-0 xl:mb-0 mb-5 text-sm">
-              {value < 20 ? "Skjut åt höger" : "Släpp för att gå till länken"}
+              {value < 20 ? "Dra till höger" : "Släpp för att gå till länken"}
             </span>
           </div>
         </div>
