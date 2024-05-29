@@ -119,9 +119,18 @@ export default function Home() {
             </div>
             <div className="w-full max-h-42 p-4 rounded-xl bg-[#2E7492] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
-                <p>Implementering av programvara med komponentbibliotek</p>
-                <p className="font-bold">30 kp</p>
+                <p>Modellering och utskrift av digitala medier</p>
+                <p className="font-bold">15 kp</p>
               </div>
+            </div>
+            <div className="w-full max-h-42 p-4 rounded-xl bg-[#2E7492] flex justify-center items-center">
+              <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
+                <p>Teknisk implementering av en nättjänst</p>
+                <p className="font-bold">15 kp</p>
+              </div>
+            </div>
+            <div>
+              <a href="https://kurs.programutvecklare.com/" target="_blank">Här kan du se innehållet i våra kurser</a>
             </div>
           </div>
         </div>
