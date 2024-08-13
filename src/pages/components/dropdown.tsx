@@ -34,6 +34,11 @@ function Dropdown() {
               Info
             </p>
           </a>
+          <a href="https://quiz.programutvecklare.com" className="m-2">
+            <p className="hover:text-[#9f9f9f] text-lg transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
+              Quiz
+            </p>
+          </a>
           <a href="#courses" className="m-2">
             <p className="hover:text-[#9f9f9f] text-lg transition duration-300 ease-in-out [text-shadow:0_4px_8px_rgba(0,0,0,5)]">
               Kurser
