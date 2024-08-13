@@ -38,7 +38,7 @@ jobs:
 
     - name: Run post-deployment commands on server
       run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
+        ssh -o StrictHostKeyChecking=no -t ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
           cd ${{ secrets.REMOTE_TARGET }}
           touch .htaccess
           mkdir -p tmp
