@@ -10,21 +10,40 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-      with:
-        ref: master
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-    - name: Deploy to Server
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18' # Specify the Node.js version you want to use
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build Next.js project
+      run: npm run build
+
+    - name: Deploy .next folder to Server
       uses: easingthemes/ssh-deploy@main
       env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc -i --delete"
+          ARGS: "-rlgoDzvc --delete"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
-          SCRIPT_AFTER: |
-            ${{ secrets.CMD_SOURCE_VIRTUAL_ENVIRONMENT }}
-            npm run build
-            touch .htaccess
-            mkdir -p tmp
-            touch tmp/restart.txt
+          TARGET: ${{ secrets.REMOTE_TARGET }}/.next/
+      with:
+          source: ".next/"
+          target: "$TARGET"
+
+    - name: Run post-deployment commands on server
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
+          cd ${{ secrets.REMOTE_TARGET }}
+          ${{ secrets.CMD_SOURCE_VIRTUAL_ENVIRONMENT }}
+          touch .htaccess
+          mkdir -p tmp
+          touch tmp/restart.txt
+        EOF
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
