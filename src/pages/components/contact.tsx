@@ -1,12 +1,18 @@
 "use client"
 
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 // import { sendMail } from "@/lib/mailserver";
+
+
+
+
 
 function Contact() {
   const [name, setName] = useState("")
   const [email, setMail] = useState("")
   const [message, setMessage] = useState("")
+  const [captcha, setCaptcha] = useState()
   const [error, setError] = useState("")
   const [isDisabled, setState] = useState(false)
 
@@ -59,6 +65,12 @@ function Contact() {
             onChange={(e)=>setMessage(e.target.value)}
             required
           ></textarea>
+          <ReCAPTCHA
+          id="test"
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!} 
+          className="mt-4"
+          
+          />
           <button
             type="submit"
             className="w-full 2xl:w-[600px] h-[90px] disabled:bg-green-700 disabled:hover:bg-green-900 rounded-xl bg-[#48922E] mt-5 text-xl 2xl:text-2xl font-bold text-white hover:bg-[#55b133] transition duration-300 ease-in-out"
