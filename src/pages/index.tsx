@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Slider from "./components/slider";
 import Dropdown from "./components/dropdown";
@@ -6,6 +7,9 @@ import Contact from "./components/contact";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Optima - Programutvecklare</title>
+      </Head> 
       <span className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
       <header
         id="home"
@@ -24,6 +28,7 @@ export default function Home() {
                   height={1080}
                   alt="Logo"
                   className="w-10 pl-3 sm:pl-1 pt-2"
+                  loading="lazy"
                 />
                 <div className="flex flex-col">
                   <Image
@@ -32,6 +37,7 @@ export default function Home() {
                     height={1080}
                     alt="Optima Logo"
                     className="w-20"
+                    loading="lazy"
                   />
                   <p className="text-sm">Programutvecklare</p>
                 </div>
@@ -57,6 +63,7 @@ export default function Home() {
             height={1080}
             alt="Main Image"
             className="w-full rounded-xl"
+            priority={true}
           />
         </div>
       </main>
@@ -69,6 +76,7 @@ export default function Home() {
             src="/image.webp"
             alt="Main Image"
             className="md:absolute md:bottom-0 md:left-0 w-full md:h-full object-cover z-[-9]"
+            priority={true}
           />
           <div className="flex justify-end">
             <div className="px-5 md:px-10 lg:px-36 py-0 md:py-36">
@@ -141,6 +149,7 @@ export default function Home() {
             height={1080}
             alt="Teacher"
             className="w-full sm:w-1/2 xl:w-auto xl:h-96"
+            loading="lazy"
           />
           <div className="ml-10 sm:mt-10 xl:mt-0">
             <p className="text-2xl lg:text-4xl text-[#ACE0E7]">Vi lär dig:</p>
@@ -193,6 +202,7 @@ export default function Home() {
               height={1080}
               alt="Optima Logo"
               className="w-24"
+              loading="lazy"
             />
           </a>
           <div className="flex w-28 2xl:w-32">
@@ -206,6 +216,7 @@ export default function Home() {
                 width={32}
                 height={32}
                 alt="Facebook"
+                loading="lazy"
               />
             </a>
             <a
@@ -218,6 +229,7 @@ export default function Home() {
                 width={32}
                 height={32}
                 alt="Instagram"
+                loading="lazy"
               />
             </a>
             <a
@@ -230,6 +242,7 @@ export default function Home() {
                 width={32}
                 height={32}
                 alt="linkedIn"
+                loading="lazy"
               />
             </a>
             <a
@@ -242,6 +255,7 @@ export default function Home() {
                 width={32}
                 height={32}
                 alt="YouTube"
+                loading="lazy"
               />
             </a>
           </div>
