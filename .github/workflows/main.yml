@@ -43,8 +43,8 @@ jobs:
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
       with:
-        source: "./"
-        target: "${{ secrets.REMOTE_TARGET }}/"
+        source: "./src"
+        target: "${{ secrets.REMOTE_TARGET }}/src"
     - name: Deploy public
       uses: easingthemes/ssh-deploy@main
       env:
