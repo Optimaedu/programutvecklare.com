@@ -35,7 +35,26 @@ jobs:
       with:
         source: ".next/"
         target: "$TARGET"
-
+    - name: Deploy project to Server
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-rlgoDzvc --delete --exclude=.git/ --exclude=node_modules/ --exclude=.env --exclude=.next/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+      with:
+        source: "./"
+        target: "${{ secrets.REMOTE_TARGET }}/"
+    - name: Deploy public
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-rlgoDzvc --delete"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+      with:
+        source: "public/"
+        target: "${{ secrets.REMOTE_TARGET }}/public/"
     - name: Set up SSH agent
       uses: webfactory/ssh-agent@v0.5.4
       with:
