@@ -80,9 +80,9 @@ export default function Home() {
           />
           <div className="flex justify-end">
             <div className="px-5 md:px-10 lg:px-36 py-0 md:py-36">
-              <h1 className="drop-shadow-2xl text-2xl md:text-3xl lg:text-5xl md:bg-[#1f264d] md:p-8 rounded-t-xl md:px-8">
+              <h2 className="drop-shadow-2xl text-2xl md:text-3xl lg:text-5xl md:bg-[#1f264d] md:p-8 rounded-t-xl md:px-8">
                 Varför programutvecklare?
-              </h1>
+              </h2>
               <p className="text-gray-300 text-2xl min-h-[350px] max-w-[800px] md:bg-[#1f264d] md:p-8 rounded-b-xl md:px-8 mb-10 md:mb-0">
                 Är du passionerad för programmering och redo att ta din kunskap till en proffsnivå? Då är en utbildning inom programutveckling perfekt för dig. Genom denna utbildning kommer du inte bara att få en gedigen förståelse för hur datorer fungerar och hur de sätts ihop i nätverk, utan även lära dig om viktiga ämnen som kundhantering, allmän företagskunskap, användning av kontorsprogram och grunderna i webbutveckling.
               </p>
@@ -96,7 +96,7 @@ export default function Home() {
         className="flex flex-col items-center xl:flex-row justify-between px-4 xl:px-36"
       >
         <div className="xl:w-[50%]">
-          <h1 className="text-4xl lg:text-5xl mt-10 md:mt-20">Kurser</h1>
+          <h2 className="text-4xl lg:text-5xl mt-10 md:mt-20">Kurser</h2>
           <div className="mt-5 space-y-5 lg:space-y-3">
             <div className="w-auto max-h-42 p-4 rounded-xl bg-[#48922E] flex justify-center items-center">
               <div className="text-lg lg:text-xl text-center mx-4 lg:mx-8">
@@ -182,9 +182,9 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1 p-6">
-          <h1 className="overflow-hidden lg:text-center xl:text-left p-5 text-2xl sm:text-3xl lg:text-4xl mb-3 ">
+          <h2 className="overflow-hidden lg:text-center xl:text-left p-5 text-2xl sm:text-3xl lg:text-4xl mb-3 ">
             Vad händer vid programutvecklare?
-          </h1>
+          </h2>
           <h2 className="text-gray-400 p-5 text-xl text-justify mb-5 overflow-hidden">
           I denna korta video får vi möjlighet att intervjua William, en studerande inom programutveckling. Han delar med sig av sin kunskap och ger oss en inblick i vad som händer inom branschen. Vi får se hur han programmerar och hur det påverkar olika områden.
           </h2>
