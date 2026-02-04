@@ -8,7 +8,10 @@ export default function Document() {
     >
       <Head>
         <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
-        <meta name="description" content="Optima - Programutvecklare" />
+        <meta name="description" content="Inom utbildningen programutvecklare lär du dig att skapa
+webbsidor, applikationer och program. Du får möjligheten
+att fokusera på det, som intresserar just dig inom programutveckling. Du får även en stabil grund för hur datorer och
+nätverk fungerar." />
       </Head>
       <body className="bg-[#0c1024] text-[#ffffe6de] font-montserrat">
         <Main />
