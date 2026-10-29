@@ -39,7 +39,7 @@ const Slider: React.FC<RangeInputProps> = ({ href }) => {
                 onTouchEnd: handleRelease,
                 onTouchStart: handleRelease,
               }}
-              className="w-60 h-12 sm:w-72 xl:mt-2 mt-1 mb-3 bg-[#6b6b6b] appearance-none outline-none overflow-hidden rounded-full cursor-grab active:cursor-grabbing bg-gradient-to-r from-orange-800 via-orange-600 to-orange-400 animate-custom bg-[length:200%]"
+              className="w-60 h-12 sm:w-72 xl:mt-2 mt-1 mb-3 bg-[#6b6b6b] appearance-none outline-none overflow-hidden rounded-full cursor-grab scrollbar-active:cursor-grabbing bg-gradient-to-r from-orange-800 via-orange-600 to-orange-400 animate-custom bg-[length:200%]"
             />
 
             <span className="sm:ml-3 ml-0 xl:mb-0 mb-5 text-sm">

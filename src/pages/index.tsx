@@ -13,7 +13,7 @@ export default function Home() {
       <span className="bg-behind h-[200%] bg-no-repeat bg-cover w-full absolute z-[-999]" />
       <header
         id="home"
-        className="flex items-center p-4 bg-[#1f264d] bg-opacity-50 shadow-xl shadow-slate-700"
+        className="flex items-center p-4 bg-[#1f264d88] shadow-xl shadow-slate-700"
       >
         <div className="relative w-full py-3 z-10 ">
           <div className="flex items-start justify-end md:justify-between">
@@ -50,7 +50,7 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center xl:flex-row xl:justify-between mx-5 lg:mx-36 mt-16 xl:mt-72 2xl:mt-44 mb-0 md:mb-32 xl:mb-[22rem]">
         <div className="text-center xl:text-left mt-6">
-          <h1 className="text-4xl xl:text-7xl 2xl:text-8xl bg-custom bg-[#db7d12] bg-clip-text text-transparent pb-2">
+          <h1 className="text-4xl xl:text-7xl 2xl:text-8xl bg-clip-text bg-snazzy bg-clip-text text-transparent pb-2">
             Programutvecklare
           </h1>
           <h2 className="text-3xl xl:text-5xl 2xl:text-6xl">“Koda världen du vill se„</h2>
